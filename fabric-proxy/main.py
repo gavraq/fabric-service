@@ -7,6 +7,7 @@ from typing import Optional
 
 from fastapi import FastAPI, HTTPException, Header, Request
 from fastapi.responses import JSONResponse, HTMLResponse
+from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
 from pattern_loader import PatternLoader
@@ -78,6 +79,11 @@ app = FastAPI(
     description="Pattern storage and sync service for Fabric AI patterns",
     version="2.0.0"
 )
+
+# Mount static files for favicon
+static_dir = Path(__file__).parent / "static"
+if static_dir.exists():
+    app.mount("/static", StaticFiles(directory=str(static_dir)), name="static")
 
 pattern_loader = PatternLoader()
 

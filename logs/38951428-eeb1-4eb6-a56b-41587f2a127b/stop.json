@@ -1,0 +1,10 @@
+[
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "Stop",
+    "stop_hook_active": false
+  }
+]
