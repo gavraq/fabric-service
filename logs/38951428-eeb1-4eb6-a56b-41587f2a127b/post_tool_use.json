@@ -17,5 +17,694 @@
       "isImage": false
     },
     "tool_use_id": "toolu_013ZbGgmgWahTiJRqEKigAPJ"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git init && git add -A && git commit -m \"$(cat <<'EOF'\nInitial commit: Fabric AI Pattern Library Service\n\n- FastAPI service hosting 235+ AI patterns for content processing\n- Web-based pattern browser at fabric.gavinslater.co.uk\n- REST API with authentication for pattern retrieval\n- Custom patterns support for Gavin-specific workflows\n- Docker deployment on Raspberry Pi\n- Pattern sync from Daniel Miessler's Fabric repository\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n)\"",
+      "description": "Initialize git and commit"
+    },
+    "tool_response": {
+      "stdout": "Initialized empty Git repository in /Users/gavinslater/projects/life/services/fabric-service/.git/\n[main (root-commit) 15cfb1a] Initial commit: Fabric AI Pattern Library Service\n 23 files changed, 4220 insertions(+)\n create mode 100644 .env.example\n create mode 100644 .gitignore\n create mode 100644 CLAUDE.md\n create mode 100644 README.md\n create mode 100644 custom-patterns/daily-reflection/system.md\n create mode 100644 custom-patterns/risk-agents-content/system.md\n create mode 100644 custom-patterns/weekly-review/system.md\n create mode 100644 docker-compose.yml\n create mode 100644 fabric-proxy/.env.example\n create mode 100644 fabric-proxy/Dockerfile\n create mode 100644 fabric-proxy/agent.py\n create mode 100644 fabric-proxy/main.py\n create mode 100644 fabric-proxy/pattern_loader.py\n create mode 100644 fabric-proxy/requirements.txt\n create mode 100644 fabric-proxy/templates/base.html\n create mode 100644 fabric-proxy/templates/index.html\n create mode 100644 fabric-proxy/templates/pattern.html\n create mode 100644 fabric-proxy/youtube.py\n create mode 100644 logs/38951428-eeb1-4eb6-a56b-41587f2a127b/post_tool_use.json\n create mode 100644 logs/38951428-eeb1-4eb6-a56b-41587f2a127b/pre_tool_use.json\n create mode 100755 scripts/deploy-to-pi.sh\n create mode 100755 scripts/test-fabric-api.sh\n create mode 100755 scripts/update-patterns.sh",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    },
+    "tool_use_id": "toolu_01Hbr3fmeg6G8i7o8pqKZGdR"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "git remote add origin https://github.com/gavraq/fabric-service.git && git branch -M main && git push -u origin main",
+      "description": "Add remote and push to GitHub"
+    },
+    "tool_response": {
+      "stdout": "branch 'main' set up to track 'origin/main'.\nTo https://github.com/gavraq/fabric-service.git\n * [new branch]      main -> main",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    },
+    "tool_use_id": "toolu_01XFXFp5SsnPGFMjctnYGndv"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "in_progress",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "pending",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "pending",
+          "activeForm": "Updating UFC context"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "in_progress",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "pending",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update deployment to use standard GitHub pull workflow",
+          "status": "pending",
+          "activeForm": "Updating deployment workflow"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "in_progress",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "pending",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "pending",
+          "activeForm": "Updating UFC context"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01VRz5RKFxBiQb56ELVRetdS"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/services/fabric-service/README.md",
+      "old_string": "1. **Clone and Configure**\n   ```bash\n   cd /Users/gavinslater/projects/life/integrations/fabric\n\n   # Copy environment template\n   cp .env.example .env\n\n   # Edit .env with your API keys\n   nano .env\n   ```",
+      "new_string": "1. **Clone and Configure**\n   ```bash\n   cd /Users/gavinslater/projects/life/services/fabric-service\n\n   # Copy environment template\n   cp .env.example .env\n\n   # Edit .env with your API keys\n   nano .env\n   ```",
+      "replace_all": false
+    },
+    "tool_response": {
+      "filePath": "/Users/gavinslater/projects/life/services/fabric-service/README.md",
+      "oldString": "1. **Clone and Configure**\n   ```bash\n   cd /Users/gavinslater/projects/life/integrations/fabric\n\n   # Copy environment template\n   cp .env.example .env\n\n   # Edit .env with your API keys\n   nano .env\n   ```",
+      "newString": "1. **Clone and Configure**\n   ```bash\n   cd /Users/gavinslater/projects/life/services/fabric-service\n\n   # Copy environment template\n   cp .env.example .env\n\n   # Edit .env with your API keys\n   nano .env\n   ```",
+      "originalFile": "# Fabric AI Integration\n\nAI augmentation framework providing 235+ battle-tested patterns for content processing, analysis, and transformation.\n\n## Overview\n\n[Fabric](https://github.com/danielmiessler/fabric) is an open-source framework for augmenting human capabilities through AI. This integration deploys a pattern library service at `fabric.gavinslater.co.uk` with a web-based pattern browser and REST API for programmatic access. Patterns are executed locally using Claude Code with your Max subscription.\n\n### Key Capabilities\n\n- **235+ AI Patterns**: Crowdsourced prompts for summarization, extraction, analysis, writing\n- **Web Pattern Browser**: Explore, search, and view patterns at fabric.gavinslater.co.uk\n- **REST API**: Pattern retrieval endpoints for programmatic access\n- **Local LLM Execution**: Patterns executed via Claude Code using Max subscription\n- **Custom Patterns**: Add Gavin-specific workflows\n- **GitHub Sync**: Keep patterns updated from official repository\n\n### Architecture\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502  Pattern Library Service (Raspberry Pi)          \u2502\n\u2502  fabric.gavinslater.co.uk                        \u2502\n\u2502  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510          \u2502\n\u2502  \u2502 Web UI      \u2502  \u2502 REST API         \u2502          \u2502\n\u2502  \u2502 Browse/     \u2502  \u2502 GET /patterns    \u2502          \u2502\n\u2502  \u2502 Search      \u2502  \u2502 GET /patterns/{n}\u2502          \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518          \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                      \u2193\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502  Local Execution (Claude Code + Max Plan)       \u2502\n\u2502  /fabric [pattern] [input]                      \u2502\n\u2502  Pattern as system prompt \u2192 LLM execution       \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                      \u2193\n              Structured Output\n```\n\n## Quick Start\n\n### Prerequisites\n\n- Docker and Docker Compose installed\n- Access to `personal-ai` Docker network\n- Anthropic API key (required)\n- Raspberry Pi SSH access (for deployment)\n\n### Setup Steps\n\n1. **Clone and Configure**\n   ```bash\n   cd /Users/gavinslater/projects/life/integrations/fabric\n\n   # Copy environment template\n   cp .env.example .env\n\n   # Edit .env with your API keys\n   nano .env\n   ```\n\n2. **Generate Secure API Key**\n   ```bash\n   # Generate a secure Fabric API key\n   openssl rand -hex 32\n\n   # Add to .env as FABRIC_API_KEY\n   ```\n\n3. **Initial Setup (One-time)**\n   ```bash\n   # Run Fabric setup to download patterns\n   docker-compose run --rm fabric-api --setup\n\n   # This will:\n   # - Download 233+ community patterns\n   # - Create configuration structure\n   # - Test AI provider connection\n   ```\n\n4. **Start Services**\n   ```bash\n   # Local testing\n   docker-compose up -d\n\n   # View logs\n   docker-compose logs -f fabric-api\n\n   # Check health\n   curl http://localhost:8085/patterns/names\n   ```\n\n5. **Deploy to Raspberry Pi**\n   ```bash\n   # Use deployment script\n   ./scripts/deploy-to-pi.sh\n\n   # Or manually:\n   sshpass -p 'raspberry' ssh pi@192.168.5.190 << 'EOF'\n     cd ~/docker/fabric\n     git pull\n     docker-compose up -d\n   EOF\n   ```\n\n## Usage\n\n### Web Pattern Browser\n\nVisit **https://fabric.gavinslater.co.uk** to:\n- Browse all 235+ patterns with search and category filtering\n- View pattern details and full system prompts\n- Copy patterns to clipboard for use\n\n**Features:**\n- Real-time search filtering\n- Category filters: Extract, Analyze, Create, Summarize, Improve, Write\n- Pattern previews with purpose descriptions\n- No authentication required for browsing\n\n### Claude Code Slash Command\n\nThe `/fabric` slash command executes patterns locally using your Max subscription:\n\n```bash\n# Basic usage\n/fabric [pattern-name] [input text]\n\n# Examples\n/fabric summarize [paste article text]\n/fabric extract_wisdom [paste transcript]\n/fabric improve_writing [paste draft]\n```\n\nThe command:\n1. Fetches the pattern from fabric.gavinslater.co.uk\n2. Uses the pattern content as the system prompt\n3. Executes locally with Claude Code (Max subscription)\n4. Returns structured output\n\n### REST API Endpoints\n\n**Base URL (Internal)**: `http://fabric-api:8080`\n**Base URL (Local)**: `http://192.168.5.190:8085`\n**Base URL (External)**: `https://fabric.gavinslater.co.uk`\n\n#### Web UI (No Auth Required)\n```bash\n# Pattern browser\nGET /\n\n# View specific pattern\nGET /view/{pattern_name}\n\n# Health check\nGET /health\n```\n\n#### API Endpoints (Require X-API-Key header)\n```bash\n# List all patterns\ncurl -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  https://fabric.gavinslater.co.uk/patterns\n\n# Get pattern content\ncurl -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  https://fabric.gavinslater.co.uk/patterns/extract_wisdom\n\n# Sync patterns from GitHub\ncurl -X POST -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  https://fabric.gavinslater.co.uk/sync\n\n# Extract YouTube transcript\ncurl -X POST -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"url\": \"https://youtube.com/watch?v=VIDEO_ID\"}' \\\n  https://fabric.gavinslater.co.uk/youtube/transcript\n```\n\n### Popular Patterns\n\n| Pattern | Purpose | Use Case |\n|---------|---------|----------|\n| `extract_wisdom` | Extract insights, quotes, ideas | YouTube videos, podcasts |\n| `summarize` | General summarization | Articles, documents |\n| `analyze_claims` | Fact-check and claim analysis | News articles, research |\n| `improve_writing` | Writing enhancement | CV, cover letters, blog posts |\n| `rate_content` | Content quality scoring | Daily brief filtering |\n| `extract_article_wisdom` | Article-specific extraction | Web content processing |\n| `create_summary` | Structured summary | Meeting notes, reports |\n\n### Custom Patterns\n\nGavin-specific patterns in `custom-patterns/`:\n\n- **daily-reflection**: GTD-aligned daily review processing\n- **weekly-review**: Strategic weekly insights generation\n- **risk-agents-content**: Content curation for risk-agents.com blog\n\n## Agent Integration\n\n### Content Processor Agent\n\nPrimary agent for Fabric pattern orchestration:\n\n```bash\n# Via Claude Code\nTask \u2192 content-processor-agent \u2192 \"Process YouTube video: [URL]\"\n```\n\nThe agent handles:\n- Pattern selection based on content type\n- API authentication and error handling\n- Output formatting for Obsidian\n- Integration with Knowledge Manager\n\n### Knowledge Manager Enhancement\n\nProcess content before storage:\n\n```python\n# Workflow example\n1. User: \"Save this YouTube video to Obsidian\"\n2. Content Processor: Extract wisdom via Fabric\n3. Knowledge Manager: Store formatted note\n4. Result: Structured note in vault\n```\n\n### Daily Brief Integration\n\nQuality scoring for articles:\n\n```python\n# Workflow example\n1. Daily Brief: Fetch candidate articles\n2. Content Processor: Rate with Fabric\n3. Daily Brief: Include top-scored articles\n4. Result: Higher quality briefings\n```\n\n## Configuration\n\n### Environment Variables\n\nSee `.env.example` for complete list. Key variables:\n\n```bash\n# Required\nANTHROPIC_API_KEY=sk-ant-...\nFABRIC_API_KEY=your-secure-key\n\n# Optional\nOPENAI_API_KEY=sk-...\nDEFAULT_VENDOR=Anthropic\nDEFAULT_MODEL=claude-sonnet-4-5-20250929\n```\n\n### Docker Network\n\nFabric joins the existing `personal-ai` network:\n\n```yaml\nnetworks:\n  - personal-ai\n```\n\n**Note**: Static IP assignment has been removed to avoid conflicts with `docker-compose run` commands. The service is accessible via hostname `fabric-api` on the personal-ai network.\n\nVerify network exists:\n```bash\ndocker network inspect personal-ai\n```\n\n### Resource Limits\n\nRecommended for Raspberry Pi:\n\n```yaml\nservices:\n  fabric-api:\n    deploy:\n      resources:\n        limits:\n          memory: 512M\n```\n\n## Monitoring\n\n### Health Checks\n\n```bash\n# Docker health status\ndocker ps --filter \"name=fabric-api\"\n\n# API health endpoint\ncurl http://fabric-api:8080/patterns/names\n\n# Detailed status\ndocker-compose ps\ndocker-compose logs fabric-api --tail=50\n```\n\n### Logs\n\n```bash\n# Real-time logs\ndocker-compose logs -f fabric-api\n\n# Log files\ntail -f logs/fabric.log\n\n# Docker logs\ndocker logs fabric-api --since 1h\n```\n\n### Resource Usage\n\n```bash\n# Container stats\ndocker stats fabric-api\n\n# Disk usage\ndu -sh config/ custom-patterns/ logs/\n\n# Pattern library size\ndu -sh config/patterns/\n```\n\n## Maintenance\n\n### Pattern Updates\n\nUpdate patterns from the official Fabric GitHub repository:\n\n```bash\n# Recommended: Use the update script (from your Mac)\n./scripts/update-patterns.sh\n\n# The script will:\n# 1. Clone latest fabric repo to Pi\n# 2. Sync patterns to config/patterns/\n# 3. Restart the container\n# 4. Verify the update\n```\n\n**Manual update (on Raspberry Pi):**\n```bash\n# Clone fabric repo\ncd /tmp && sudo git clone --depth=1 https://github.com/danielmiessler/fabric.git fabric_update\n\n# Sync patterns\nsudo rsync -av --delete /tmp/fabric_update/data/patterns/ ~/docker/fabric/config/patterns/\n\n# Restart service\ncd ~/docker/fabric && docker-compose restart fabric-api\n\n# Cleanup\nsudo rm -rf /tmp/fabric_update\n```\n\n**Note:** The `/sync` API endpoint is not functional because patterns are volume-mounted from the host rather than cloned inside the container.\n\n### Session Cleanup\n\nSessions accumulate over time. Clean up periodically:\n\n```bash\n# Remove sessions older than 30 days\nfind config/sessions/ -type f -mtime +30 -delete\n\n# Clear all sessions\nrm -rf config/sessions/*\n```\n\n### Backup Configuration\n\n```bash\n# Backup custom patterns and config\ntar -czf fabric-backup-$(date +%Y%m%d).tar.gz \\\n  custom-patterns/ \\\n  config/.env \\\n  config/config.json\n\n# Restore\ntar -xzf fabric-backup-YYYYMMDD.tar.gz\n```\n\n## Troubleshooting\n\n### Container Won't Start\n\n```bash\n# Check logs\ndocker-compose logs fabric-api\n\n# Common issues:\n# 1. Network doesn't exist\ndocker network create personal-ai\n\n# 2. Port conflict\nlsof -i :8085\n\n# 3. Missing .env file\ncp .env.example .env && nano .env\n```\n\n### API Key Authentication Failing\n\n```bash\n# Verify API key is set\ndocker-compose exec fabric-api env | grep FABRIC_API_KEY\n\n# Test with explicit key\ncurl -H \"X-API-Key: your-key\" http://fabric-api:8080/patterns/names\n```\n\n### Pattern Execution Errors\n\n```bash\n# Check AI provider keys\ndocker-compose exec fabric-api env | grep API_KEY\n\n# Test Anthropic connection\ncurl -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  https://api.anthropic.com/v1/messages \\\n  -d '{\"model\":\"claude-3-haiku-20240307\",\"max_tokens\":10,\"messages\":[{\"role\":\"user\",\"content\":\"Hi\"}]}'\n```\n\n### ARM64 Compatibility Issues\n\n```bash\n# Verify image architecture\ndocker image inspect kayvan/fabric:latest | grep Architecture\n\n# Force ARM64 pull\ndocker pull --platform linux/arm64 kayvan/fabric:latest\n```\n\n## Development\n\n### Creating Custom Patterns\n\n1. Create pattern directory:\n   ```bash\n   mkdir -p custom-patterns/my-pattern\n   ```\n\n2. Write system prompt:\n   ```bash\n   nano custom-patterns/my-pattern/system.md\n   ```\n\n3. Use pattern structure:\n   ```markdown\n   # IDENTITY and PURPOSE\n   You are a...\n\n   # INPUT\n   The input will contain...\n\n   # OUTPUT\n   Extract and organize...\n\n   # OUTPUT FORMAT\n   Use markdown...\n   ```\n\n4. Test pattern:\n   ```bash\n   curl -X POST http://fabric-api:8080/api/chat \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"model\": \"my-pattern\", \"messages\": [...]}'\n   ```\n\n### Testing\n\n```bash\n# Test with sample content\necho \"Test content\" | docker-compose exec -T fabric-api fabric -p summarize\n\n# Test API endpoint\n./scripts/test-fabric-api.sh\n\n# Test agent integration\nTask \u2192 content-processor-agent \u2192 \"Test Fabric integration\"\n```\n\n## External Resources\n\n- [Fabric GitHub Repository](https://github.com/danielmiessler/fabric)\n- [Official Documentation](https://github.com/danielmiessler/fabric/tree/main/docs)\n- [Pattern Library](https://github.com/danielmiessler/fabric/tree/main/patterns)\n- [Docker Hub Images](https://hub.docker.com/r/kayvan/fabric)\n\n## Integration Points\n\n| Component | Integration Type | Status |\n|-----------|------------------|--------|\n| Content Processor Agent | Primary orchestrator | \u2705 Planned |\n| Knowledge Manager | Pattern preprocessing | \u2705 Planned |\n| Daily Brief | Content quality scoring | \u2705 Planned |\n| Job Search | CV/writing optimization | \u2705 Planned |\n| Health Agent | Trend narrative generation | \ud83d\udd04 Future |\n| Weekly Review | Insight extraction | \ud83d\udd04 Future |\n\n## Performance\n\n### Expected Metrics\n\n- API response time: < 2s (95th percentile)\n- Pattern execution success rate: > 98%\n- Service uptime: > 99.5%\n- Memory usage: < 512MB steady state\n\n### Optimization Tips\n\n1. Use streaming for long content\n2. Cache frequently used patterns\n3. Implement request rate limiting\n4. Monitor AI provider quota usage\n5. Clean up old sessions regularly\n\n## Security\n\n### Best Practices\n\n- \u2705 API key authentication enabled\n- \u2705 Environment variables not committed\n- \u2705 NGINX reverse proxy with SSL\n- \u2705 Docker network isolation\n- \u2705 Regular security updates\n- \u26a0\ufe0f Consider: Rate limiting at NGINX level\n- \u26a0\ufe0f Consider: API key rotation policy\n\n### Access Control\n\n- Internal: Any container on `personal-ai` network\n- External: HTTPS via fabric.gavinslater.co.uk\n- Authentication: X-API-Key header required\n\n## License\n\nFabric is licensed under MIT. See [upstream repository](https://github.com/danielmiessler/fabric) for details.\n\n## Support\n\nFor issues with this integration:\n- Check troubleshooting section above\n- Review logs: `docker-compose logs fabric-api`\n- Test API connectivity and authentication\n- Verify Raspberry Pi resource availability\n\nFor Fabric framework issues:\n- [Official GitHub Issues](https://github.com/danielmiessler/fabric/issues)\n- [Discord Community](https://discord.gg/fabric)\n",
+      "structuredPatch": [
+        {
+          "oldStart": 50,
+          "oldLines": 7,
+          "newStart": 50,
+          "newLines": 7,
+          "lines": [
+            " ",
+            " 1. **Clone and Configure**",
+            "    ```bash",
+            "-   cd /Users/gavinslater/projects/life/integrations/fabric",
+            "+   cd /Users/gavinslater/projects/life/services/fabric-service",
+            " ",
+            "    # Copy environment template",
+            "    cp .env.example .env"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    },
+    "tool_use_id": "toolu_01Wyy25jLALFoj92VDGaRmTM"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/services/fabric-service/README.md",
+      "old_string": "5. **Deploy to Raspberry Pi**\n   ```bash\n   # Use deployment script\n   ./scripts/deploy-to-pi.sh\n\n   # Or manually:\n   sshpass -p 'raspberry' ssh pi@192.168.5.190 << 'EOF'\n     cd ~/docker/fabric\n     git pull\n     docker-compose up -d\n   EOF\n   ```",
+      "new_string": "5. **Deploy to Raspberry Pi**\n   ```bash\n   # Use deployment script\n   ./scripts/deploy-to-pi.sh\n\n   # Or manually:\n   ssh pi@192.168.5.190 << 'EOF'\n     cd ~/docker/fabric\n     git pull origin main\n     docker-compose up -d --build\n   EOF\n   ```\n\n## Repository\n\n- **GitHub**: https://github.com/gavraq/fabric-service\n- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`\n- **Prod Environment**: Raspberry Pi `~/docker/fabric`\n- **Live URL**: https://fabric.gavinslater.co.uk\n\n### Deployment Workflow\n\n```\nLocal dev \u2192 GitHub (git push) \u2192 Pi (git pull) \u2192 Docker build \u2192 Running container\n```\n\nStandard deployment steps on Raspberry Pi:\n```bash\ncd ~/docker/fabric\ngit pull origin main\ndocker-compose up -d --build\n```",
+      "replace_all": false
+    },
+    "tool_response": {
+      "filePath": "/Users/gavinslater/projects/life/services/fabric-service/README.md",
+      "oldString": "5. **Deploy to Raspberry Pi**\n   ```bash\n   # Use deployment script\n   ./scripts/deploy-to-pi.sh\n\n   # Or manually:\n   sshpass -p 'raspberry' ssh pi@192.168.5.190 << 'EOF'\n     cd ~/docker/fabric\n     git pull\n     docker-compose up -d\n   EOF\n   ```",
+      "newString": "5. **Deploy to Raspberry Pi**\n   ```bash\n   # Use deployment script\n   ./scripts/deploy-to-pi.sh\n\n   # Or manually:\n   ssh pi@192.168.5.190 << 'EOF'\n     cd ~/docker/fabric\n     git pull origin main\n     docker-compose up -d --build\n   EOF\n   ```\n\n## Repository\n\n- **GitHub**: https://github.com/gavraq/fabric-service\n- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`\n- **Prod Environment**: Raspberry Pi `~/docker/fabric`\n- **Live URL**: https://fabric.gavinslater.co.uk\n\n### Deployment Workflow\n\n```\nLocal dev \u2192 GitHub (git push) \u2192 Pi (git pull) \u2192 Docker build \u2192 Running container\n```\n\nStandard deployment steps on Raspberry Pi:\n```bash\ncd ~/docker/fabric\ngit pull origin main\ndocker-compose up -d --build\n```",
+      "originalFile": "# Fabric AI Integration\n\nAI augmentation framework providing 235+ battle-tested patterns for content processing, analysis, and transformation.\n\n## Overview\n\n[Fabric](https://github.com/danielmiessler/fabric) is an open-source framework for augmenting human capabilities through AI. This integration deploys a pattern library service at `fabric.gavinslater.co.uk` with a web-based pattern browser and REST API for programmatic access. Patterns are executed locally using Claude Code with your Max subscription.\n\n### Key Capabilities\n\n- **235+ AI Patterns**: Crowdsourced prompts for summarization, extraction, analysis, writing\n- **Web Pattern Browser**: Explore, search, and view patterns at fabric.gavinslater.co.uk\n- **REST API**: Pattern retrieval endpoints for programmatic access\n- **Local LLM Execution**: Patterns executed via Claude Code using Max subscription\n- **Custom Patterns**: Add Gavin-specific workflows\n- **GitHub Sync**: Keep patterns updated from official repository\n\n### Architecture\n\n```\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502  Pattern Library Service (Raspberry Pi)          \u2502\n\u2502  fabric.gavinslater.co.uk                        \u2502\n\u2502  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510  \u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510          \u2502\n\u2502  \u2502 Web UI      \u2502  \u2502 REST API         \u2502          \u2502\n\u2502  \u2502 Browse/     \u2502  \u2502 GET /patterns    \u2502          \u2502\n\u2502  \u2502 Search      \u2502  \u2502 GET /patterns/{n}\u2502          \u2502\n\u2502  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518  \u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518          \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                      \u2193\n\u250c\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2510\n\u2502  Local Execution (Claude Code + Max Plan)       \u2502\n\u2502  /fabric [pattern] [input]                      \u2502\n\u2502  Pattern as system prompt \u2192 LLM execution       \u2502\n\u2514\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2500\u2518\n                      \u2193\n              Structured Output\n```\n\n## Quick Start\n\n### Prerequisites\n\n- Docker and Docker Compose installed\n- Access to `personal-ai` Docker network\n- Anthropic API key (required)\n- Raspberry Pi SSH access (for deployment)\n\n### Setup Steps\n\n1. **Clone and Configure**\n   ```bash\n   cd /Users/gavinslater/projects/life/services/fabric-service\n\n   # Copy environment template\n   cp .env.example .env\n\n   # Edit .env with your API keys\n   nano .env\n   ```\n\n2. **Generate Secure API Key**\n   ```bash\n   # Generate a secure Fabric API key\n   openssl rand -hex 32\n\n   # Add to .env as FABRIC_API_KEY\n   ```\n\n3. **Initial Setup (One-time)**\n   ```bash\n   # Run Fabric setup to download patterns\n   docker-compose run --rm fabric-api --setup\n\n   # This will:\n   # - Download 233+ community patterns\n   # - Create configuration structure\n   # - Test AI provider connection\n   ```\n\n4. **Start Services**\n   ```bash\n   # Local testing\n   docker-compose up -d\n\n   # View logs\n   docker-compose logs -f fabric-api\n\n   # Check health\n   curl http://localhost:8085/patterns/names\n   ```\n\n5. **Deploy to Raspberry Pi**\n   ```bash\n   # Use deployment script\n   ./scripts/deploy-to-pi.sh\n\n   # Or manually:\n   sshpass -p 'raspberry' ssh pi@192.168.5.190 << 'EOF'\n     cd ~/docker/fabric\n     git pull\n     docker-compose up -d\n   EOF\n   ```\n\n## Usage\n\n### Web Pattern Browser\n\nVisit **https://fabric.gavinslater.co.uk** to:\n- Browse all 235+ patterns with search and category filtering\n- View pattern details and full system prompts\n- Copy patterns to clipboard for use\n\n**Features:**\n- Real-time search filtering\n- Category filters: Extract, Analyze, Create, Summarize, Improve, Write\n- Pattern previews with purpose descriptions\n- No authentication required for browsing\n\n### Claude Code Slash Command\n\nThe `/fabric` slash command executes patterns locally using your Max subscription:\n\n```bash\n# Basic usage\n/fabric [pattern-name] [input text]\n\n# Examples\n/fabric summarize [paste article text]\n/fabric extract_wisdom [paste transcript]\n/fabric improve_writing [paste draft]\n```\n\nThe command:\n1. Fetches the pattern from fabric.gavinslater.co.uk\n2. Uses the pattern content as the system prompt\n3. Executes locally with Claude Code (Max subscription)\n4. Returns structured output\n\n### REST API Endpoints\n\n**Base URL (Internal)**: `http://fabric-api:8080`\n**Base URL (Local)**: `http://192.168.5.190:8085`\n**Base URL (External)**: `https://fabric.gavinslater.co.uk`\n\n#### Web UI (No Auth Required)\n```bash\n# Pattern browser\nGET /\n\n# View specific pattern\nGET /view/{pattern_name}\n\n# Health check\nGET /health\n```\n\n#### API Endpoints (Require X-API-Key header)\n```bash\n# List all patterns\ncurl -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  https://fabric.gavinslater.co.uk/patterns\n\n# Get pattern content\ncurl -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  https://fabric.gavinslater.co.uk/patterns/extract_wisdom\n\n# Sync patterns from GitHub\ncurl -X POST -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  https://fabric.gavinslater.co.uk/sync\n\n# Extract YouTube transcript\ncurl -X POST -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  -H \"Content-Type: application/json\" \\\n  -d '{\"url\": \"https://youtube.com/watch?v=VIDEO_ID\"}' \\\n  https://fabric.gavinslater.co.uk/youtube/transcript\n```\n\n### Popular Patterns\n\n| Pattern | Purpose | Use Case |\n|---------|---------|----------|\n| `extract_wisdom` | Extract insights, quotes, ideas | YouTube videos, podcasts |\n| `summarize` | General summarization | Articles, documents |\n| `analyze_claims` | Fact-check and claim analysis | News articles, research |\n| `improve_writing` | Writing enhancement | CV, cover letters, blog posts |\n| `rate_content` | Content quality scoring | Daily brief filtering |\n| `extract_article_wisdom` | Article-specific extraction | Web content processing |\n| `create_summary` | Structured summary | Meeting notes, reports |\n\n### Custom Patterns\n\nGavin-specific patterns in `custom-patterns/`:\n\n- **daily-reflection**: GTD-aligned daily review processing\n- **weekly-review**: Strategic weekly insights generation\n- **risk-agents-content**: Content curation for risk-agents.com blog\n\n## Agent Integration\n\n### Content Processor Agent\n\nPrimary agent for Fabric pattern orchestration:\n\n```bash\n# Via Claude Code\nTask \u2192 content-processor-agent \u2192 \"Process YouTube video: [URL]\"\n```\n\nThe agent handles:\n- Pattern selection based on content type\n- API authentication and error handling\n- Output formatting for Obsidian\n- Integration with Knowledge Manager\n\n### Knowledge Manager Enhancement\n\nProcess content before storage:\n\n```python\n# Workflow example\n1. User: \"Save this YouTube video to Obsidian\"\n2. Content Processor: Extract wisdom via Fabric\n3. Knowledge Manager: Store formatted note\n4. Result: Structured note in vault\n```\n\n### Daily Brief Integration\n\nQuality scoring for articles:\n\n```python\n# Workflow example\n1. Daily Brief: Fetch candidate articles\n2. Content Processor: Rate with Fabric\n3. Daily Brief: Include top-scored articles\n4. Result: Higher quality briefings\n```\n\n## Configuration\n\n### Environment Variables\n\nSee `.env.example` for complete list. Key variables:\n\n```bash\n# Required\nANTHROPIC_API_KEY=sk-ant-...\nFABRIC_API_KEY=your-secure-key\n\n# Optional\nOPENAI_API_KEY=sk-...\nDEFAULT_VENDOR=Anthropic\nDEFAULT_MODEL=claude-sonnet-4-5-20250929\n```\n\n### Docker Network\n\nFabric joins the existing `personal-ai` network:\n\n```yaml\nnetworks:\n  - personal-ai\n```\n\n**Note**: Static IP assignment has been removed to avoid conflicts with `docker-compose run` commands. The service is accessible via hostname `fabric-api` on the personal-ai network.\n\nVerify network exists:\n```bash\ndocker network inspect personal-ai\n```\n\n### Resource Limits\n\nRecommended for Raspberry Pi:\n\n```yaml\nservices:\n  fabric-api:\n    deploy:\n      resources:\n        limits:\n          memory: 512M\n```\n\n## Monitoring\n\n### Health Checks\n\n```bash\n# Docker health status\ndocker ps --filter \"name=fabric-api\"\n\n# API health endpoint\ncurl http://fabric-api:8080/patterns/names\n\n# Detailed status\ndocker-compose ps\ndocker-compose logs fabric-api --tail=50\n```\n\n### Logs\n\n```bash\n# Real-time logs\ndocker-compose logs -f fabric-api\n\n# Log files\ntail -f logs/fabric.log\n\n# Docker logs\ndocker logs fabric-api --since 1h\n```\n\n### Resource Usage\n\n```bash\n# Container stats\ndocker stats fabric-api\n\n# Disk usage\ndu -sh config/ custom-patterns/ logs/\n\n# Pattern library size\ndu -sh config/patterns/\n```\n\n## Maintenance\n\n### Pattern Updates\n\nUpdate patterns from the official Fabric GitHub repository:\n\n```bash\n# Recommended: Use the update script (from your Mac)\n./scripts/update-patterns.sh\n\n# The script will:\n# 1. Clone latest fabric repo to Pi\n# 2. Sync patterns to config/patterns/\n# 3. Restart the container\n# 4. Verify the update\n```\n\n**Manual update (on Raspberry Pi):**\n```bash\n# Clone fabric repo\ncd /tmp && sudo git clone --depth=1 https://github.com/danielmiessler/fabric.git fabric_update\n\n# Sync patterns\nsudo rsync -av --delete /tmp/fabric_update/data/patterns/ ~/docker/fabric/config/patterns/\n\n# Restart service\ncd ~/docker/fabric && docker-compose restart fabric-api\n\n# Cleanup\nsudo rm -rf /tmp/fabric_update\n```\n\n**Note:** The `/sync` API endpoint is not functional because patterns are volume-mounted from the host rather than cloned inside the container.\n\n### Session Cleanup\n\nSessions accumulate over time. Clean up periodically:\n\n```bash\n# Remove sessions older than 30 days\nfind config/sessions/ -type f -mtime +30 -delete\n\n# Clear all sessions\nrm -rf config/sessions/*\n```\n\n### Backup Configuration\n\n```bash\n# Backup custom patterns and config\ntar -czf fabric-backup-$(date +%Y%m%d).tar.gz \\\n  custom-patterns/ \\\n  config/.env \\\n  config/config.json\n\n# Restore\ntar -xzf fabric-backup-YYYYMMDD.tar.gz\n```\n\n## Troubleshooting\n\n### Container Won't Start\n\n```bash\n# Check logs\ndocker-compose logs fabric-api\n\n# Common issues:\n# 1. Network doesn't exist\ndocker network create personal-ai\n\n# 2. Port conflict\nlsof -i :8085\n\n# 3. Missing .env file\ncp .env.example .env && nano .env\n```\n\n### API Key Authentication Failing\n\n```bash\n# Verify API key is set\ndocker-compose exec fabric-api env | grep FABRIC_API_KEY\n\n# Test with explicit key\ncurl -H \"X-API-Key: your-key\" http://fabric-api:8080/patterns/names\n```\n\n### Pattern Execution Errors\n\n```bash\n# Check AI provider keys\ndocker-compose exec fabric-api env | grep API_KEY\n\n# Test Anthropic connection\ncurl -H \"x-api-key: $ANTHROPIC_API_KEY\" \\\n  https://api.anthropic.com/v1/messages \\\n  -d '{\"model\":\"claude-3-haiku-20240307\",\"max_tokens\":10,\"messages\":[{\"role\":\"user\",\"content\":\"Hi\"}]}'\n```\n\n### ARM64 Compatibility Issues\n\n```bash\n# Verify image architecture\ndocker image inspect kayvan/fabric:latest | grep Architecture\n\n# Force ARM64 pull\ndocker pull --platform linux/arm64 kayvan/fabric:latest\n```\n\n## Development\n\n### Creating Custom Patterns\n\n1. Create pattern directory:\n   ```bash\n   mkdir -p custom-patterns/my-pattern\n   ```\n\n2. Write system prompt:\n   ```bash\n   nano custom-patterns/my-pattern/system.md\n   ```\n\n3. Use pattern structure:\n   ```markdown\n   # IDENTITY and PURPOSE\n   You are a...\n\n   # INPUT\n   The input will contain...\n\n   # OUTPUT\n   Extract and organize...\n\n   # OUTPUT FORMAT\n   Use markdown...\n   ```\n\n4. Test pattern:\n   ```bash\n   curl -X POST http://fabric-api:8080/api/chat \\\n     -H \"Content-Type: application/json\" \\\n     -d '{\"model\": \"my-pattern\", \"messages\": [...]}'\n   ```\n\n### Testing\n\n```bash\n# Test with sample content\necho \"Test content\" | docker-compose exec -T fabric-api fabric -p summarize\n\n# Test API endpoint\n./scripts/test-fabric-api.sh\n\n# Test agent integration\nTask \u2192 content-processor-agent \u2192 \"Test Fabric integration\"\n```\n\n## External Resources\n\n- [Fabric GitHub Repository](https://github.com/danielmiessler/fabric)\n- [Official Documentation](https://github.com/danielmiessler/fabric/tree/main/docs)\n- [Pattern Library](https://github.com/danielmiessler/fabric/tree/main/patterns)\n- [Docker Hub Images](https://hub.docker.com/r/kayvan/fabric)\n\n## Integration Points\n\n| Component | Integration Type | Status |\n|-----------|------------------|--------|\n| Content Processor Agent | Primary orchestrator | \u2705 Planned |\n| Knowledge Manager | Pattern preprocessing | \u2705 Planned |\n| Daily Brief | Content quality scoring | \u2705 Planned |\n| Job Search | CV/writing optimization | \u2705 Planned |\n| Health Agent | Trend narrative generation | \ud83d\udd04 Future |\n| Weekly Review | Insight extraction | \ud83d\udd04 Future |\n\n## Performance\n\n### Expected Metrics\n\n- API response time: < 2s (95th percentile)\n- Pattern execution success rate: > 98%\n- Service uptime: > 99.5%\n- Memory usage: < 512MB steady state\n\n### Optimization Tips\n\n1. Use streaming for long content\n2. Cache frequently used patterns\n3. Implement request rate limiting\n4. Monitor AI provider quota usage\n5. Clean up old sessions regularly\n\n## Security\n\n### Best Practices\n\n- \u2705 API key authentication enabled\n- \u2705 Environment variables not committed\n- \u2705 NGINX reverse proxy with SSL\n- \u2705 Docker network isolation\n- \u2705 Regular security updates\n- \u26a0\ufe0f Consider: Rate limiting at NGINX level\n- \u26a0\ufe0f Consider: API key rotation policy\n\n### Access Control\n\n- Internal: Any container on `personal-ai` network\n- External: HTTPS via fabric.gavinslater.co.uk\n- Authentication: X-API-Key header required\n\n## License\n\nFabric is licensed under MIT. See [upstream repository](https://github.com/danielmiessler/fabric) for details.\n\n## Support\n\nFor issues with this integration:\n- Check troubleshooting section above\n- Review logs: `docker-compose logs fabric-api`\n- Test API connectivity and authentication\n- Verify Raspberry Pi resource availability\n\nFor Fabric framework issues:\n- [Official GitHub Issues](https://github.com/danielmiessler/fabric/issues)\n- [Discord Community](https://discord.gg/fabric)\n",
+      "structuredPatch": [
+        {
+          "oldStart": 96,
+          "oldLines": 13,
+          "newStart": 96,
+          "newLines": 33,
+          "lines": [
+            "    ./scripts/deploy-to-pi.sh",
+            " ",
+            "    # Or manually:",
+            "-   sshpass -p 'raspberry' ssh pi@192.168.5.190 << 'EOF'",
+            "+   ssh pi@192.168.5.190 << 'EOF'",
+            "      cd ~/docker/fabric",
+            "-     git pull",
+            "-     docker-compose up -d",
+            "+     git pull origin main",
+            "+     docker-compose up -d --build",
+            "    EOF",
+            "    ```",
+            " ",
+            "+## Repository",
+            "+",
+            "+- **GitHub**: https://github.com/gavraq/fabric-service",
+            "+- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`",
+            "+- **Prod Environment**: Raspberry Pi `~/docker/fabric`",
+            "+- **Live URL**: https://fabric.gavinslater.co.uk",
+            "+",
+            "+### Deployment Workflow",
+            "+",
+            "+```",
+            "+Local dev \u2192 GitHub (git push) \u2192 Pi (git pull) \u2192 Docker build \u2192 Running container",
+            "+```",
+            "+",
+            "+Standard deployment steps on Raspberry Pi:",
+            "+```bash",
+            "+cd ~/docker/fabric",
+            "+git pull origin main",
+            "+docker-compose up -d --build",
+            "+```",
+            "+",
+            " ## Usage",
+            " ",
+            " ### Web Pattern Browser"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    },
+    "tool_use_id": "toolu_01AMvS4hjXnDigYgnkfAFeUd"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+        "content": "# Fabric AI Integration - UFC Context\n\n## Overview\n\n**Fabric** is an open-source AI augmentation framework providing 233+ battle-tested patterns for content processing, integrated into Gavin's Personal AI Infrastructure as a REST API service.\n\n**Status**: \u2705 Deployed and Operational\n**Deployment**: Raspberry Pi (192.168.5.190) via Docker\n**Access**:\n- Internal (Docker): `http://fabric-api:8080`\n- Pi Local: `http://192.168.5.190:8085`\n- External: `https://fabric.gavinslater.co.uk` \u2705 SSL enabled\n\n## Purpose & Value\n\n### Core Capabilities\n- **Content Processing**: YouTube\u2192Obsidian, articles\u2192summaries, podcasts\u2192insights\n- **Pattern Library**: 233+ community-proven prompts (extraction, analysis, summarization, writing)\n- **Custom Workflows**: GTD-aligned daily/weekly reviews, risk-agents.com content curation\n- **Multi-Provider**: Anthropic, OpenAI, Google (fallback resilience)\n\n### Integration Value\n1. **Time Savings**: 50% reduction in content processing time (YouTube 20min\u21922min)\n2. **Quality Improvement**: Standardized, consistent content extraction vs ad-hoc prompts\n3. **Knowledge Enhancement**: Better structured Obsidian notes with actionable insights\n4. **Career Development**: Demonstrable AI integration expertise for portfolio\n\n## Architecture\n\n```\nContent Request\n    \u2193\nPersonal Consultant (YOU)\n    \u2193\nContent Processor Agent (Task delegation)\n    \u2193\nFabric API (pattern execution)\n    \u2193\nStructured Output (markdown)\n    \u2193\nKnowledge Manager \u2192 Obsidian\n```\n\n## When to Use Fabric\n\n### DO Use Fabric For:\n- \u2705 YouTube video/podcast transcript processing\n- \u2705 Article summarization and wisdom extraction\n- \u2705 Content quality scoring (Daily Brief)\n- \u2705 Writing improvement (CV, cover letters, blog posts)\n- \u2705 Daily reflections (GTD-aligned pattern)\n- \u2705 Weekly reviews (strategic insights pattern)\n- \u2705 AI safety content curation (risk-agents.com)\n\n### DON'T Use Fabric For:\n- \u274c Simple text transformations (use native capabilities)\n- \u274c Real-time conversational tasks (use direct LLM)\n- \u274c Integration-specific operations (Gmail, FreeAgent, LinkedIn)\n- \u274c Quick one-off questions not needing specialized patterns\n\n## Agent Coordination\n\n### Primary Agent: Content Processor\n**File**: `/.claude/agents/content-processor-agent.md`\n\n**Delegation Pattern**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube video: [URL]\"\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian\"\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection from today's data\"\n```\n\n**NEVER**:\n- Call Fabric API directly via Bash/curl (breaks abstraction)\n- Reimplement patterns manually (use existing community patterns)\n- Bypass Content Processor for Fabric tasks\n\n### Enhanced Agents\n\n| Agent | Enhancement | Integration Point |\n|-------|-------------|-------------------|\n| Knowledge Manager | Fabric preprocessing | Before Obsidian storage |\n| Daily Brief | Content quality scoring | Article filtering via `rate_content` |\n| Job Search | CV/writing optimization | `improve_writing` pattern |\n| Daily Journal | Reflection processing | `daily-reflection` custom pattern |\n| Weekly Review | Strategic insights | `weekly-review` custom pattern |\n\n## Available Patterns\n\n### Community Patterns (233+)\n\n**Content Extraction** (Most Used):\n- `extract_wisdom` - Insights, quotes, ideas from videos/podcasts\n- `extract_article_wisdom` - Article-specific extraction\n- `extract_recommendations` - Action items\n- `extract_ideas` - Novel concepts\n\n**Analysis**:\n- `analyze_claims` - Fact-checking, claim validation\n- `rate_content` - Quality scoring (1-10)\n- `analyze_prose` - Writing style analysis\n\n**Summarization**:\n- `summarize` - General summarization\n- `summarize_paper` - Academic papers\n- `create_summary` - Structured summaries\n\n**Writing**:\n- `improve_writing` - Enhancement for CV, blog, emails\n- `create_essay_plan` - Outline generation\n- `write_essay` - Full content generation\n\n### Custom Patterns (Gavin-Specific)\n\n**daily-reflection**:\n- **Input**: Location, health, calendar, tasks, notes\n- **Output**: GTD-aligned productivity assessment, goal alignment, insights, tomorrow's priorities\n- **Use Case**: Automated daily review for Obsidian daily notes\n\n**weekly-review**:\n- **Input**: Week's daily reflections + aggregated metrics\n- **Output**: Strategic review across GTD horizons, patterns, priorities\n- **Use Case**: David Allen 12-step weekly review automation\n\n**risk-agents-content**:\n- **Input**: AI safety/risk article, paper, or video content\n- **Output**: Relevance score, key insights, blog post potential, title suggestions\n- **Use Case**: Content curation for risk-agents.com blog\n\n## API Access\n\n### Endpoints\n\n**Base URLs**:\n- Internal (Docker Network): `http://fabric-api:8080` (use from other containers)\n- Raspberry Pi Local: `http://192.168.5.190:8085` (host machine access)\n- External: `https://fabric.gavinslater.co.uk` (public access - SSL enabled)\n\n**Port Mapping**: Container port 8080 \u2192 Host port 8085\n\n**Authentication**: `X-API-Key: ${FABRIC_API_KEY}` header required\n\n**Key Endpoints**:\n- `GET /patterns/names` - List 233+ patterns\n- `POST /api/chat` - Execute pattern (Ollama-compatible)\n- `POST /youtube/transcript` - Extract YouTube transcript\n- `GET /patterns/:name` - Pattern details\n\n### Example Usage\n\n```bash\n# Execute pattern\ncurl -X POST http://fabric-api:8080/api/chat \\\n  -H \"Content-Type: application/json\" \\\n  -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  -d '{\n    \"model\": \"extract_wisdom\",\n    \"stream\": false,\n    \"messages\": [{\"role\": \"user\", \"content\": \"content here\"}]\n  }'\n```\n\n## Workflow Examples\n\n### YouTube \u2192 Obsidian\n1. User: \"Save this AI safety talk: [YouTube URL]\"\n2. YOU \u2192 Content Processor Agent\n3. Content Processor \u2192 Fabric: extract transcript + extract_wisdom\n4. Content Processor \u2192 Knowledge Manager: Store formatted note\n5. Result: `Notes/Videos/[title].md` with insights\n\n### Daily Brief Quality Scoring\n1. Daily Brief: Fetch articles\n2. Daily Brief \u2192 Content Processor: Rate each article\n3. Content Processor \u2192 Fabric: `rate_content` pattern\n4. Content Processor \u2192 Daily Brief: Scores + justifications\n5. Result: Top-scored articles in briefing\n\n### CV Optimization\n1. User: \"Optimize CV summary for AI Engineer role\"\n2. YOU \u2192 Job Search Agent\n3. Job Search \u2192 Content Processor: improve_writing + job context\n4. Content Processor \u2192 Fabric: Execute pattern\n5. Result: Enhanced CV section shown as diff\n\n## Deployment\n\n### Infrastructure\n- **Location**: Raspberry Pi (192.168.5.190)\n- **Docker Image**: `kayvan/fabric:latest` (ARM64 compatible)\n- **Network**: `personal-ai` (dynamic IP, accessible via hostname)\n- **Port**: 8085 (host) \u2192 8080 (container)\n- **Reverse Proxy**: NGINX at `fabric.gavinslater.co.uk`\n- **Resources**: 512MB RAM limit, auto-restart enabled\n\n### Configuration\n- **Default Vendor**: Anthropic\n- **Default Model**: claude-sonnet-4-5-20250929\n- **Pattern Updates**: Auto-sync from official repository\n- **Session Cleanup**: 30-day retention policy\n\n### Health Monitoring\n```bash\n# Check service health\ncurl http://fabric-api:8080/patterns/names\n\n# Container status\ndocker ps --filter \"name=fabric-api\"\n\n# Resource usage\ndocker stats fabric-api\n```\n\n## File Locations\n\n### Integration Files\n```\n/integrations/fabric/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u2514\u2500\u2500 logs/                    # Service logs\n```\n\n### Agent & Context Files\n```\n/.claude/agents/content-processor-agent.md    # Agent definition\n/.claude/context/tools/fabric-integration-context.md  # This file\n```\n\n## Integration Guidelines\n\n### Tools-First Protocol\n1. **Content processing tasks** \u2192 Always delegate to Content Processor Agent\n2. **Pattern execution** \u2192 Content Processor handles API calls\n3. **Knowledge storage** \u2192 Delegate to Knowledge Manager (not direct Write)\n4. **Task creation** \u2192 Extract action items \u2192 GTD Task Manager\n\n### Error Handling\n- **API unavailable**: Fall back to direct LLM with similar prompt\n- **Pattern not found**: List available patterns, suggest closest match\n- **Authentication failure**: Check FABRIC_API_KEY, notify user\n- **Timeout**: Retry with exponential backoff (max 3 attempts)\n\n### Quality Standards\n- \u2705 Always format output for Obsidian (frontmatter, markdown, tags)\n- \u2705 Preserve source attribution (URLs, authors, dates)\n- \u2705 Add context via metadata (pattern used, processing date)\n- \u2705 Create logical file paths (by type: Videos/, Articles/, AI Safety/)\n- \u2705 Link to related notes when applicable\n\n## Success Metrics\n\n### Technical\n- API response time: < 2s (95th percentile)\n- Pattern execution success: > 98%\n- Service uptime: > 99.5%\n- Memory usage: < 512MB steady\n\n### Usage\n- Patterns executed per week: Track volume\n- Most used patterns: Optimize workflows\n- Content processed: YouTube, articles, documents\n- Custom pattern adoption: Evidence of value\n\n### Value\n- Time saved: Target 50% reduction\n- Notes created: Volume via Fabric\n- Blog frequency: 2x increase (risk-agents.com)\n- Quality improvement: User feedback\n\n## Quick Reference\n\n### Common Tasks\n\n**Process YouTube Video**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube: [URL] using extract_wisdom\"\n```\n\n**Summarize Article**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian storage\"\n```\n\n**Daily Reflection**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection for today\"\n```\n\n**Rate Article Quality**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Rate this article: [URL]\"\n```\n\n**Optimize Writing**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Improve this text: [content]\"\n```\n\n### Pattern Selection Logic\n\n| Content Type | Recommended Pattern | Output |\n|--------------|-------------------|--------|\n| YouTube video | `extract_wisdom` | Insights, quotes, ideas |\n| Web article | `extract_article_wisdom` | Key insights |\n| News article | `rate_content` or `analyze_claims` | Score or fact-check |\n| Writing draft | `improve_writing` | Enhanced version |\n| Long document | `summarize` | Concise summary |\n| Daily data | `daily-reflection` (custom) | GTD-aligned review |\n| Week data | `weekly-review` (custom) | Strategic insights |\n| AI safety content | `risk-agents-content` (custom) | Blog potential |\n\n## Resources\n\n### Documentation\n- Setup Guide: `/integrations/fabric/README.md`\n- AI Assistant Guide: `/integrations/fabric/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`\n\n### External Links\n- Fabric Repository: https://github.com/danielmiessler/fabric\n- Pattern Library: https://github.com/danielmiessler/fabric/tree/main/patterns\n- Docker Images: https://hub.docker.com/r/kayvan/fabric\n\n### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`\n\n---\n\n**Key Takeaway**: Fabric adds powerful, standardized content processing to Gavin's Personal AI Infrastructure. Always delegate to Content Processor Agent, leverage community patterns, and maintain tools-first discipline for maximum value.\n",
+        "numLines": 340,
+        "startLine": 1,
+        "totalLines": 340
+      }
+    },
+    "tool_use_id": "toolu_01TvoytwdnFqdoQDYno5twC3"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+      "old_string": "## File Locations\n\n### Integration Files\n```\n/integrations/fabric/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u2514\u2500\u2500 logs/                    # Service logs\n```",
+      "new_string": "## File Locations\n\n### Service Files\n```\n/services/fabric-service/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 fabric-proxy/            # FastAPI proxy application\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u251c\u2500\u2500 scripts/                 # Deployment and update scripts\n\u2514\u2500\u2500 logs/                    # Service logs\n```\n\n### Repository\n- **GitHub**: https://github.com/gavraq/fabric-service\n- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`\n- **Prod Environment**: Raspberry Pi `~/docker/fabric`",
+      "replace_all": false
+    },
+    "tool_response": {
+      "filePath": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+      "oldString": "## File Locations\n\n### Integration Files\n```\n/integrations/fabric/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u2514\u2500\u2500 logs/                    # Service logs\n```",
+      "newString": "## File Locations\n\n### Service Files\n```\n/services/fabric-service/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 fabric-proxy/            # FastAPI proxy application\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u251c\u2500\u2500 scripts/                 # Deployment and update scripts\n\u2514\u2500\u2500 logs/                    # Service logs\n```\n\n### Repository\n- **GitHub**: https://github.com/gavraq/fabric-service\n- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`\n- **Prod Environment**: Raspberry Pi `~/docker/fabric`",
+      "originalFile": "# Fabric AI Integration - UFC Context\n\n## Overview\n\n**Fabric** is an open-source AI augmentation framework providing 233+ battle-tested patterns for content processing, integrated into Gavin's Personal AI Infrastructure as a REST API service.\n\n**Status**: \u2705 Deployed and Operational\n**Deployment**: Raspberry Pi (192.168.5.190) via Docker\n**Access**:\n- Internal (Docker): `http://fabric-api:8080`\n- Pi Local: `http://192.168.5.190:8085`\n- External: `https://fabric.gavinslater.co.uk` \u2705 SSL enabled\n\n## Purpose & Value\n\n### Core Capabilities\n- **Content Processing**: YouTube\u2192Obsidian, articles\u2192summaries, podcasts\u2192insights\n- **Pattern Library**: 233+ community-proven prompts (extraction, analysis, summarization, writing)\n- **Custom Workflows**: GTD-aligned daily/weekly reviews, risk-agents.com content curation\n- **Multi-Provider**: Anthropic, OpenAI, Google (fallback resilience)\n\n### Integration Value\n1. **Time Savings**: 50% reduction in content processing time (YouTube 20min\u21922min)\n2. **Quality Improvement**: Standardized, consistent content extraction vs ad-hoc prompts\n3. **Knowledge Enhancement**: Better structured Obsidian notes with actionable insights\n4. **Career Development**: Demonstrable AI integration expertise for portfolio\n\n## Architecture\n\n```\nContent Request\n    \u2193\nPersonal Consultant (YOU)\n    \u2193\nContent Processor Agent (Task delegation)\n    \u2193\nFabric API (pattern execution)\n    \u2193\nStructured Output (markdown)\n    \u2193\nKnowledge Manager \u2192 Obsidian\n```\n\n## When to Use Fabric\n\n### DO Use Fabric For:\n- \u2705 YouTube video/podcast transcript processing\n- \u2705 Article summarization and wisdom extraction\n- \u2705 Content quality scoring (Daily Brief)\n- \u2705 Writing improvement (CV, cover letters, blog posts)\n- \u2705 Daily reflections (GTD-aligned pattern)\n- \u2705 Weekly reviews (strategic insights pattern)\n- \u2705 AI safety content curation (risk-agents.com)\n\n### DON'T Use Fabric For:\n- \u274c Simple text transformations (use native capabilities)\n- \u274c Real-time conversational tasks (use direct LLM)\n- \u274c Integration-specific operations (Gmail, FreeAgent, LinkedIn)\n- \u274c Quick one-off questions not needing specialized patterns\n\n## Agent Coordination\n\n### Primary Agent: Content Processor\n**File**: `/.claude/agents/content-processor-agent.md`\n\n**Delegation Pattern**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube video: [URL]\"\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian\"\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection from today's data\"\n```\n\n**NEVER**:\n- Call Fabric API directly via Bash/curl (breaks abstraction)\n- Reimplement patterns manually (use existing community patterns)\n- Bypass Content Processor for Fabric tasks\n\n### Enhanced Agents\n\n| Agent | Enhancement | Integration Point |\n|-------|-------------|-------------------|\n| Knowledge Manager | Fabric preprocessing | Before Obsidian storage |\n| Daily Brief | Content quality scoring | Article filtering via `rate_content` |\n| Job Search | CV/writing optimization | `improve_writing` pattern |\n| Daily Journal | Reflection processing | `daily-reflection` custom pattern |\n| Weekly Review | Strategic insights | `weekly-review` custom pattern |\n\n## Available Patterns\n\n### Community Patterns (233+)\n\n**Content Extraction** (Most Used):\n- `extract_wisdom` - Insights, quotes, ideas from videos/podcasts\n- `extract_article_wisdom` - Article-specific extraction\n- `extract_recommendations` - Action items\n- `extract_ideas` - Novel concepts\n\n**Analysis**:\n- `analyze_claims` - Fact-checking, claim validation\n- `rate_content` - Quality scoring (1-10)\n- `analyze_prose` - Writing style analysis\n\n**Summarization**:\n- `summarize` - General summarization\n- `summarize_paper` - Academic papers\n- `create_summary` - Structured summaries\n\n**Writing**:\n- `improve_writing` - Enhancement for CV, blog, emails\n- `create_essay_plan` - Outline generation\n- `write_essay` - Full content generation\n\n### Custom Patterns (Gavin-Specific)\n\n**daily-reflection**:\n- **Input**: Location, health, calendar, tasks, notes\n- **Output**: GTD-aligned productivity assessment, goal alignment, insights, tomorrow's priorities\n- **Use Case**: Automated daily review for Obsidian daily notes\n\n**weekly-review**:\n- **Input**: Week's daily reflections + aggregated metrics\n- **Output**: Strategic review across GTD horizons, patterns, priorities\n- **Use Case**: David Allen 12-step weekly review automation\n\n**risk-agents-content**:\n- **Input**: AI safety/risk article, paper, or video content\n- **Output**: Relevance score, key insights, blog post potential, title suggestions\n- **Use Case**: Content curation for risk-agents.com blog\n\n## API Access\n\n### Endpoints\n\n**Base URLs**:\n- Internal (Docker Network): `http://fabric-api:8080` (use from other containers)\n- Raspberry Pi Local: `http://192.168.5.190:8085` (host machine access)\n- External: `https://fabric.gavinslater.co.uk` (public access - SSL enabled)\n\n**Port Mapping**: Container port 8080 \u2192 Host port 8085\n\n**Authentication**: `X-API-Key: ${FABRIC_API_KEY}` header required\n\n**Key Endpoints**:\n- `GET /patterns/names` - List 233+ patterns\n- `POST /api/chat` - Execute pattern (Ollama-compatible)\n- `POST /youtube/transcript` - Extract YouTube transcript\n- `GET /patterns/:name` - Pattern details\n\n### Example Usage\n\n```bash\n# Execute pattern\ncurl -X POST http://fabric-api:8080/api/chat \\\n  -H \"Content-Type: application/json\" \\\n  -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  -d '{\n    \"model\": \"extract_wisdom\",\n    \"stream\": false,\n    \"messages\": [{\"role\": \"user\", \"content\": \"content here\"}]\n  }'\n```\n\n## Workflow Examples\n\n### YouTube \u2192 Obsidian\n1. User: \"Save this AI safety talk: [YouTube URL]\"\n2. YOU \u2192 Content Processor Agent\n3. Content Processor \u2192 Fabric: extract transcript + extract_wisdom\n4. Content Processor \u2192 Knowledge Manager: Store formatted note\n5. Result: `Notes/Videos/[title].md` with insights\n\n### Daily Brief Quality Scoring\n1. Daily Brief: Fetch articles\n2. Daily Brief \u2192 Content Processor: Rate each article\n3. Content Processor \u2192 Fabric: `rate_content` pattern\n4. Content Processor \u2192 Daily Brief: Scores + justifications\n5. Result: Top-scored articles in briefing\n\n### CV Optimization\n1. User: \"Optimize CV summary for AI Engineer role\"\n2. YOU \u2192 Job Search Agent\n3. Job Search \u2192 Content Processor: improve_writing + job context\n4. Content Processor \u2192 Fabric: Execute pattern\n5. Result: Enhanced CV section shown as diff\n\n## Deployment\n\n### Infrastructure\n- **Location**: Raspberry Pi (192.168.5.190)\n- **Docker Image**: `kayvan/fabric:latest` (ARM64 compatible)\n- **Network**: `personal-ai` (dynamic IP, accessible via hostname)\n- **Port**: 8085 (host) \u2192 8080 (container)\n- **Reverse Proxy**: NGINX at `fabric.gavinslater.co.uk`\n- **Resources**: 512MB RAM limit, auto-restart enabled\n\n### Configuration\n- **Default Vendor**: Anthropic\n- **Default Model**: claude-sonnet-4-5-20250929\n- **Pattern Updates**: Auto-sync from official repository\n- **Session Cleanup**: 30-day retention policy\n\n### Health Monitoring\n```bash\n# Check service health\ncurl http://fabric-api:8080/patterns/names\n\n# Container status\ndocker ps --filter \"name=fabric-api\"\n\n# Resource usage\ndocker stats fabric-api\n```\n\n## File Locations\n\n### Integration Files\n```\n/integrations/fabric/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u2514\u2500\u2500 logs/                    # Service logs\n```\n\n### Agent & Context Files\n```\n/.claude/agents/content-processor-agent.md    # Agent definition\n/.claude/context/tools/fabric-integration-context.md  # This file\n```\n\n## Integration Guidelines\n\n### Tools-First Protocol\n1. **Content processing tasks** \u2192 Always delegate to Content Processor Agent\n2. **Pattern execution** \u2192 Content Processor handles API calls\n3. **Knowledge storage** \u2192 Delegate to Knowledge Manager (not direct Write)\n4. **Task creation** \u2192 Extract action items \u2192 GTD Task Manager\n\n### Error Handling\n- **API unavailable**: Fall back to direct LLM with similar prompt\n- **Pattern not found**: List available patterns, suggest closest match\n- **Authentication failure**: Check FABRIC_API_KEY, notify user\n- **Timeout**: Retry with exponential backoff (max 3 attempts)\n\n### Quality Standards\n- \u2705 Always format output for Obsidian (frontmatter, markdown, tags)\n- \u2705 Preserve source attribution (URLs, authors, dates)\n- \u2705 Add context via metadata (pattern used, processing date)\n- \u2705 Create logical file paths (by type: Videos/, Articles/, AI Safety/)\n- \u2705 Link to related notes when applicable\n\n## Success Metrics\n\n### Technical\n- API response time: < 2s (95th percentile)\n- Pattern execution success: > 98%\n- Service uptime: > 99.5%\n- Memory usage: < 512MB steady\n\n### Usage\n- Patterns executed per week: Track volume\n- Most used patterns: Optimize workflows\n- Content processed: YouTube, articles, documents\n- Custom pattern adoption: Evidence of value\n\n### Value\n- Time saved: Target 50% reduction\n- Notes created: Volume via Fabric\n- Blog frequency: 2x increase (risk-agents.com)\n- Quality improvement: User feedback\n\n## Quick Reference\n\n### Common Tasks\n\n**Process YouTube Video**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube: [URL] using extract_wisdom\"\n```\n\n**Summarize Article**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian storage\"\n```\n\n**Daily Reflection**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection for today\"\n```\n\n**Rate Article Quality**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Rate this article: [URL]\"\n```\n\n**Optimize Writing**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Improve this text: [content]\"\n```\n\n### Pattern Selection Logic\n\n| Content Type | Recommended Pattern | Output |\n|--------------|-------------------|--------|\n| YouTube video | `extract_wisdom` | Insights, quotes, ideas |\n| Web article | `extract_article_wisdom` | Key insights |\n| News article | `rate_content` or `analyze_claims` | Score or fact-check |\n| Writing draft | `improve_writing` | Enhanced version |\n| Long document | `summarize` | Concise summary |\n| Daily data | `daily-reflection` (custom) | GTD-aligned review |\n| Week data | `weekly-review` (custom) | Strategic insights |\n| AI safety content | `risk-agents-content` (custom) | Blog potential |\n\n## Resources\n\n### Documentation\n- Setup Guide: `/integrations/fabric/README.md`\n- AI Assistant Guide: `/integrations/fabric/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`\n\n### External Links\n- Fabric Repository: https://github.com/danielmiessler/fabric\n- Pattern Library: https://github.com/danielmiessler/fabric/tree/main/patterns\n- Docker Images: https://hub.docker.com/r/kayvan/fabric\n\n### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`\n\n---\n\n**Key Takeaway**: Fabric adds powerful, standardized content processing to Gavin's Personal AI Infrastructure. Always delegate to Content Processor Agent, leverage community patterns, and maintain tools-first discipline for maximum value.\n",
+      "structuredPatch": [
+        {
+          "oldStart": 213,
+          "oldLines": 21,
+          "newStart": 213,
+          "newLines": 28,
+          "lines": [
+            " ",
+            " ## File Locations",
+            " ",
+            "-### Integration Files",
+            "+### Service Files",
+            " ```",
+            "-/integrations/fabric/",
+            "+/services/fabric-service/",
+            " \u251c\u2500\u2500 docker-compose.yml       # Service definition",
+            " \u251c\u2500\u2500 .env                     # API keys (gitignored)",
+            " \u251c\u2500\u2500 README.md                # Setup and usage guide",
+            " \u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide",
+            "+\u251c\u2500\u2500 fabric-proxy/            # FastAPI proxy application",
+            " \u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)",
+            " \u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns",
+            " \u2502   \u251c\u2500\u2500 daily-reflection/",
+            " \u2502   \u251c\u2500\u2500 weekly-review/",
+            " \u2502   \u2514\u2500\u2500 risk-agents-content/",
+            "+\u251c\u2500\u2500 scripts/                 # Deployment and update scripts",
+            " \u2514\u2500\u2500 logs/                    # Service logs",
+            " ```",
+            " ",
+            "+### Repository",
+            "+- **GitHub**: https://github.com/gavraq/fabric-service",
+            "+- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`",
+            "+- **Prod Environment**: Raspberry Pi `~/docker/fabric`",
+            "+",
+            " ### Agent & Context Files",
+            " ```",
+            " /.claude/agents/content-processor-agent.md    # Agent definition"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    },
+    "tool_use_id": "toolu_019jh6woWFwXgnatL4byhdU4"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+      "old_string": "### Documentation\n- Setup Guide: `/integrations/fabric/README.md`\n- AI Assistant Guide: `/integrations/fabric/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`",
+      "new_string": "### Documentation\n- Setup Guide: `/services/fabric-service/README.md`\n- AI Assistant Guide: `/services/fabric-service/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`",
+      "replace_all": false
+    },
+    "tool_response": {
+      "filePath": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+      "oldString": "### Documentation\n- Setup Guide: `/integrations/fabric/README.md`\n- AI Assistant Guide: `/integrations/fabric/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`",
+      "newString": "### Documentation\n- Setup Guide: `/services/fabric-service/README.md`\n- AI Assistant Guide: `/services/fabric-service/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`",
+      "originalFile": "# Fabric AI Integration - UFC Context\n\n## Overview\n\n**Fabric** is an open-source AI augmentation framework providing 233+ battle-tested patterns for content processing, integrated into Gavin's Personal AI Infrastructure as a REST API service.\n\n**Status**: \u2705 Deployed and Operational\n**Deployment**: Raspberry Pi (192.168.5.190) via Docker\n**Access**:\n- Internal (Docker): `http://fabric-api:8080`\n- Pi Local: `http://192.168.5.190:8085`\n- External: `https://fabric.gavinslater.co.uk` \u2705 SSL enabled\n\n## Purpose & Value\n\n### Core Capabilities\n- **Content Processing**: YouTube\u2192Obsidian, articles\u2192summaries, podcasts\u2192insights\n- **Pattern Library**: 233+ community-proven prompts (extraction, analysis, summarization, writing)\n- **Custom Workflows**: GTD-aligned daily/weekly reviews, risk-agents.com content curation\n- **Multi-Provider**: Anthropic, OpenAI, Google (fallback resilience)\n\n### Integration Value\n1. **Time Savings**: 50% reduction in content processing time (YouTube 20min\u21922min)\n2. **Quality Improvement**: Standardized, consistent content extraction vs ad-hoc prompts\n3. **Knowledge Enhancement**: Better structured Obsidian notes with actionable insights\n4. **Career Development**: Demonstrable AI integration expertise for portfolio\n\n## Architecture\n\n```\nContent Request\n    \u2193\nPersonal Consultant (YOU)\n    \u2193\nContent Processor Agent (Task delegation)\n    \u2193\nFabric API (pattern execution)\n    \u2193\nStructured Output (markdown)\n    \u2193\nKnowledge Manager \u2192 Obsidian\n```\n\n## When to Use Fabric\n\n### DO Use Fabric For:\n- \u2705 YouTube video/podcast transcript processing\n- \u2705 Article summarization and wisdom extraction\n- \u2705 Content quality scoring (Daily Brief)\n- \u2705 Writing improvement (CV, cover letters, blog posts)\n- \u2705 Daily reflections (GTD-aligned pattern)\n- \u2705 Weekly reviews (strategic insights pattern)\n- \u2705 AI safety content curation (risk-agents.com)\n\n### DON'T Use Fabric For:\n- \u274c Simple text transformations (use native capabilities)\n- \u274c Real-time conversational tasks (use direct LLM)\n- \u274c Integration-specific operations (Gmail, FreeAgent, LinkedIn)\n- \u274c Quick one-off questions not needing specialized patterns\n\n## Agent Coordination\n\n### Primary Agent: Content Processor\n**File**: `/.claude/agents/content-processor-agent.md`\n\n**Delegation Pattern**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube video: [URL]\"\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian\"\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection from today's data\"\n```\n\n**NEVER**:\n- Call Fabric API directly via Bash/curl (breaks abstraction)\n- Reimplement patterns manually (use existing community patterns)\n- Bypass Content Processor for Fabric tasks\n\n### Enhanced Agents\n\n| Agent | Enhancement | Integration Point |\n|-------|-------------|-------------------|\n| Knowledge Manager | Fabric preprocessing | Before Obsidian storage |\n| Daily Brief | Content quality scoring | Article filtering via `rate_content` |\n| Job Search | CV/writing optimization | `improve_writing` pattern |\n| Daily Journal | Reflection processing | `daily-reflection` custom pattern |\n| Weekly Review | Strategic insights | `weekly-review` custom pattern |\n\n## Available Patterns\n\n### Community Patterns (233+)\n\n**Content Extraction** (Most Used):\n- `extract_wisdom` - Insights, quotes, ideas from videos/podcasts\n- `extract_article_wisdom` - Article-specific extraction\n- `extract_recommendations` - Action items\n- `extract_ideas` - Novel concepts\n\n**Analysis**:\n- `analyze_claims` - Fact-checking, claim validation\n- `rate_content` - Quality scoring (1-10)\n- `analyze_prose` - Writing style analysis\n\n**Summarization**:\n- `summarize` - General summarization\n- `summarize_paper` - Academic papers\n- `create_summary` - Structured summaries\n\n**Writing**:\n- `improve_writing` - Enhancement for CV, blog, emails\n- `create_essay_plan` - Outline generation\n- `write_essay` - Full content generation\n\n### Custom Patterns (Gavin-Specific)\n\n**daily-reflection**:\n- **Input**: Location, health, calendar, tasks, notes\n- **Output**: GTD-aligned productivity assessment, goal alignment, insights, tomorrow's priorities\n- **Use Case**: Automated daily review for Obsidian daily notes\n\n**weekly-review**:\n- **Input**: Week's daily reflections + aggregated metrics\n- **Output**: Strategic review across GTD horizons, patterns, priorities\n- **Use Case**: David Allen 12-step weekly review automation\n\n**risk-agents-content**:\n- **Input**: AI safety/risk article, paper, or video content\n- **Output**: Relevance score, key insights, blog post potential, title suggestions\n- **Use Case**: Content curation for risk-agents.com blog\n\n## API Access\n\n### Endpoints\n\n**Base URLs**:\n- Internal (Docker Network): `http://fabric-api:8080` (use from other containers)\n- Raspberry Pi Local: `http://192.168.5.190:8085` (host machine access)\n- External: `https://fabric.gavinslater.co.uk` (public access - SSL enabled)\n\n**Port Mapping**: Container port 8080 \u2192 Host port 8085\n\n**Authentication**: `X-API-Key: ${FABRIC_API_KEY}` header required\n\n**Key Endpoints**:\n- `GET /patterns/names` - List 233+ patterns\n- `POST /api/chat` - Execute pattern (Ollama-compatible)\n- `POST /youtube/transcript` - Extract YouTube transcript\n- `GET /patterns/:name` - Pattern details\n\n### Example Usage\n\n```bash\n# Execute pattern\ncurl -X POST http://fabric-api:8080/api/chat \\\n  -H \"Content-Type: application/json\" \\\n  -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  -d '{\n    \"model\": \"extract_wisdom\",\n    \"stream\": false,\n    \"messages\": [{\"role\": \"user\", \"content\": \"content here\"}]\n  }'\n```\n\n## Workflow Examples\n\n### YouTube \u2192 Obsidian\n1. User: \"Save this AI safety talk: [YouTube URL]\"\n2. YOU \u2192 Content Processor Agent\n3. Content Processor \u2192 Fabric: extract transcript + extract_wisdom\n4. Content Processor \u2192 Knowledge Manager: Store formatted note\n5. Result: `Notes/Videos/[title].md` with insights\n\n### Daily Brief Quality Scoring\n1. Daily Brief: Fetch articles\n2. Daily Brief \u2192 Content Processor: Rate each article\n3. Content Processor \u2192 Fabric: `rate_content` pattern\n4. Content Processor \u2192 Daily Brief: Scores + justifications\n5. Result: Top-scored articles in briefing\n\n### CV Optimization\n1. User: \"Optimize CV summary for AI Engineer role\"\n2. YOU \u2192 Job Search Agent\n3. Job Search \u2192 Content Processor: improve_writing + job context\n4. Content Processor \u2192 Fabric: Execute pattern\n5. Result: Enhanced CV section shown as diff\n\n## Deployment\n\n### Infrastructure\n- **Location**: Raspberry Pi (192.168.5.190)\n- **Docker Image**: `kayvan/fabric:latest` (ARM64 compatible)\n- **Network**: `personal-ai` (dynamic IP, accessible via hostname)\n- **Port**: 8085 (host) \u2192 8080 (container)\n- **Reverse Proxy**: NGINX at `fabric.gavinslater.co.uk`\n- **Resources**: 512MB RAM limit, auto-restart enabled\n\n### Configuration\n- **Default Vendor**: Anthropic\n- **Default Model**: claude-sonnet-4-5-20250929\n- **Pattern Updates**: Auto-sync from official repository\n- **Session Cleanup**: 30-day retention policy\n\n### Health Monitoring\n```bash\n# Check service health\ncurl http://fabric-api:8080/patterns/names\n\n# Container status\ndocker ps --filter \"name=fabric-api\"\n\n# Resource usage\ndocker stats fabric-api\n```\n\n## File Locations\n\n### Service Files\n```\n/services/fabric-service/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 fabric-proxy/            # FastAPI proxy application\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u251c\u2500\u2500 scripts/                 # Deployment and update scripts\n\u2514\u2500\u2500 logs/                    # Service logs\n```\n\n### Repository\n- **GitHub**: https://github.com/gavraq/fabric-service\n- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`\n- **Prod Environment**: Raspberry Pi `~/docker/fabric`\n\n### Agent & Context Files\n```\n/.claude/agents/content-processor-agent.md    # Agent definition\n/.claude/context/tools/fabric-integration-context.md  # This file\n```\n\n## Integration Guidelines\n\n### Tools-First Protocol\n1. **Content processing tasks** \u2192 Always delegate to Content Processor Agent\n2. **Pattern execution** \u2192 Content Processor handles API calls\n3. **Knowledge storage** \u2192 Delegate to Knowledge Manager (not direct Write)\n4. **Task creation** \u2192 Extract action items \u2192 GTD Task Manager\n\n### Error Handling\n- **API unavailable**: Fall back to direct LLM with similar prompt\n- **Pattern not found**: List available patterns, suggest closest match\n- **Authentication failure**: Check FABRIC_API_KEY, notify user\n- **Timeout**: Retry with exponential backoff (max 3 attempts)\n\n### Quality Standards\n- \u2705 Always format output for Obsidian (frontmatter, markdown, tags)\n- \u2705 Preserve source attribution (URLs, authors, dates)\n- \u2705 Add context via metadata (pattern used, processing date)\n- \u2705 Create logical file paths (by type: Videos/, Articles/, AI Safety/)\n- \u2705 Link to related notes when applicable\n\n## Success Metrics\n\n### Technical\n- API response time: < 2s (95th percentile)\n- Pattern execution success: > 98%\n- Service uptime: > 99.5%\n- Memory usage: < 512MB steady\n\n### Usage\n- Patterns executed per week: Track volume\n- Most used patterns: Optimize workflows\n- Content processed: YouTube, articles, documents\n- Custom pattern adoption: Evidence of value\n\n### Value\n- Time saved: Target 50% reduction\n- Notes created: Volume via Fabric\n- Blog frequency: 2x increase (risk-agents.com)\n- Quality improvement: User feedback\n\n## Quick Reference\n\n### Common Tasks\n\n**Process YouTube Video**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube: [URL] using extract_wisdom\"\n```\n\n**Summarize Article**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian storage\"\n```\n\n**Daily Reflection**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection for today\"\n```\n\n**Rate Article Quality**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Rate this article: [URL]\"\n```\n\n**Optimize Writing**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Improve this text: [content]\"\n```\n\n### Pattern Selection Logic\n\n| Content Type | Recommended Pattern | Output |\n|--------------|-------------------|--------|\n| YouTube video | `extract_wisdom` | Insights, quotes, ideas |\n| Web article | `extract_article_wisdom` | Key insights |\n| News article | `rate_content` or `analyze_claims` | Score or fact-check |\n| Writing draft | `improve_writing` | Enhanced version |\n| Long document | `summarize` | Concise summary |\n| Daily data | `daily-reflection` (custom) | GTD-aligned review |\n| Week data | `weekly-review` (custom) | Strategic insights |\n| AI safety content | `risk-agents-content` (custom) | Blog potential |\n\n## Resources\n\n### Documentation\n- Setup Guide: `/integrations/fabric/README.md`\n- AI Assistant Guide: `/integrations/fabric/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`\n\n### External Links\n- Fabric Repository: https://github.com/danielmiessler/fabric\n- Pattern Library: https://github.com/danielmiessler/fabric/tree/main/patterns\n- Docker Images: https://hub.docker.com/r/kayvan/fabric\n\n### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`\n\n---\n\n**Key Takeaway**: Fabric adds powerful, standardized content processing to Gavin's Personal AI Infrastructure. Always delegate to Content Processor Agent, leverage community patterns, and maintain tools-first discipline for maximum value.\n",
+      "structuredPatch": [
+        {
+          "oldStart": 327,
+          "oldLines": 8,
+          "newStart": 327,
+          "newLines": 8,
+          "lines": [
+            " ## Resources",
+            " ",
+            " ### Documentation",
+            "-- Setup Guide: `/integrations/fabric/README.md`",
+            "-- AI Assistant Guide: `/integrations/fabric/CLAUDE.md`",
+            "+- Setup Guide: `/services/fabric-service/README.md`",
+            "+- AI Assistant Guide: `/services/fabric-service/CLAUDE.md`",
+            " - Agent Definition: `/.claude/agents/content-processor-agent.md`",
+            " ",
+            " ### External Links"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    },
+    "tool_use_id": "toolu_012G1f81TT3D2MuVf1Cc1wyq"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Edit",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+      "old_string": "### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`",
+      "new_string": "### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `ssh pi@192.168.5.190 'cd ~/docker/fabric && docker-compose logs'`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`",
+      "replace_all": false
+    },
+    "tool_response": {
+      "filePath": "/Users/gavinslater/projects/life/.claude/context/tools/fabric-integration-context.md",
+      "oldString": "### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`",
+      "newString": "### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `ssh pi@192.168.5.190 'cd ~/docker/fabric && docker-compose logs'`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`",
+      "originalFile": "# Fabric AI Integration - UFC Context\n\n## Overview\n\n**Fabric** is an open-source AI augmentation framework providing 233+ battle-tested patterns for content processing, integrated into Gavin's Personal AI Infrastructure as a REST API service.\n\n**Status**: \u2705 Deployed and Operational\n**Deployment**: Raspberry Pi (192.168.5.190) via Docker\n**Access**:\n- Internal (Docker): `http://fabric-api:8080`\n- Pi Local: `http://192.168.5.190:8085`\n- External: `https://fabric.gavinslater.co.uk` \u2705 SSL enabled\n\n## Purpose & Value\n\n### Core Capabilities\n- **Content Processing**: YouTube\u2192Obsidian, articles\u2192summaries, podcasts\u2192insights\n- **Pattern Library**: 233+ community-proven prompts (extraction, analysis, summarization, writing)\n- **Custom Workflows**: GTD-aligned daily/weekly reviews, risk-agents.com content curation\n- **Multi-Provider**: Anthropic, OpenAI, Google (fallback resilience)\n\n### Integration Value\n1. **Time Savings**: 50% reduction in content processing time (YouTube 20min\u21922min)\n2. **Quality Improvement**: Standardized, consistent content extraction vs ad-hoc prompts\n3. **Knowledge Enhancement**: Better structured Obsidian notes with actionable insights\n4. **Career Development**: Demonstrable AI integration expertise for portfolio\n\n## Architecture\n\n```\nContent Request\n    \u2193\nPersonal Consultant (YOU)\n    \u2193\nContent Processor Agent (Task delegation)\n    \u2193\nFabric API (pattern execution)\n    \u2193\nStructured Output (markdown)\n    \u2193\nKnowledge Manager \u2192 Obsidian\n```\n\n## When to Use Fabric\n\n### DO Use Fabric For:\n- \u2705 YouTube video/podcast transcript processing\n- \u2705 Article summarization and wisdom extraction\n- \u2705 Content quality scoring (Daily Brief)\n- \u2705 Writing improvement (CV, cover letters, blog posts)\n- \u2705 Daily reflections (GTD-aligned pattern)\n- \u2705 Weekly reviews (strategic insights pattern)\n- \u2705 AI safety content curation (risk-agents.com)\n\n### DON'T Use Fabric For:\n- \u274c Simple text transformations (use native capabilities)\n- \u274c Real-time conversational tasks (use direct LLM)\n- \u274c Integration-specific operations (Gmail, FreeAgent, LinkedIn)\n- \u274c Quick one-off questions not needing specialized patterns\n\n## Agent Coordination\n\n### Primary Agent: Content Processor\n**File**: `/.claude/agents/content-processor-agent.md`\n\n**Delegation Pattern**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube video: [URL]\"\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian\"\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection from today's data\"\n```\n\n**NEVER**:\n- Call Fabric API directly via Bash/curl (breaks abstraction)\n- Reimplement patterns manually (use existing community patterns)\n- Bypass Content Processor for Fabric tasks\n\n### Enhanced Agents\n\n| Agent | Enhancement | Integration Point |\n|-------|-------------|-------------------|\n| Knowledge Manager | Fabric preprocessing | Before Obsidian storage |\n| Daily Brief | Content quality scoring | Article filtering via `rate_content` |\n| Job Search | CV/writing optimization | `improve_writing` pattern |\n| Daily Journal | Reflection processing | `daily-reflection` custom pattern |\n| Weekly Review | Strategic insights | `weekly-review` custom pattern |\n\n## Available Patterns\n\n### Community Patterns (233+)\n\n**Content Extraction** (Most Used):\n- `extract_wisdom` - Insights, quotes, ideas from videos/podcasts\n- `extract_article_wisdom` - Article-specific extraction\n- `extract_recommendations` - Action items\n- `extract_ideas` - Novel concepts\n\n**Analysis**:\n- `analyze_claims` - Fact-checking, claim validation\n- `rate_content` - Quality scoring (1-10)\n- `analyze_prose` - Writing style analysis\n\n**Summarization**:\n- `summarize` - General summarization\n- `summarize_paper` - Academic papers\n- `create_summary` - Structured summaries\n\n**Writing**:\n- `improve_writing` - Enhancement for CV, blog, emails\n- `create_essay_plan` - Outline generation\n- `write_essay` - Full content generation\n\n### Custom Patterns (Gavin-Specific)\n\n**daily-reflection**:\n- **Input**: Location, health, calendar, tasks, notes\n- **Output**: GTD-aligned productivity assessment, goal alignment, insights, tomorrow's priorities\n- **Use Case**: Automated daily review for Obsidian daily notes\n\n**weekly-review**:\n- **Input**: Week's daily reflections + aggregated metrics\n- **Output**: Strategic review across GTD horizons, patterns, priorities\n- **Use Case**: David Allen 12-step weekly review automation\n\n**risk-agents-content**:\n- **Input**: AI safety/risk article, paper, or video content\n- **Output**: Relevance score, key insights, blog post potential, title suggestions\n- **Use Case**: Content curation for risk-agents.com blog\n\n## API Access\n\n### Endpoints\n\n**Base URLs**:\n- Internal (Docker Network): `http://fabric-api:8080` (use from other containers)\n- Raspberry Pi Local: `http://192.168.5.190:8085` (host machine access)\n- External: `https://fabric.gavinslater.co.uk` (public access - SSL enabled)\n\n**Port Mapping**: Container port 8080 \u2192 Host port 8085\n\n**Authentication**: `X-API-Key: ${FABRIC_API_KEY}` header required\n\n**Key Endpoints**:\n- `GET /patterns/names` - List 233+ patterns\n- `POST /api/chat` - Execute pattern (Ollama-compatible)\n- `POST /youtube/transcript` - Extract YouTube transcript\n- `GET /patterns/:name` - Pattern details\n\n### Example Usage\n\n```bash\n# Execute pattern\ncurl -X POST http://fabric-api:8080/api/chat \\\n  -H \"Content-Type: application/json\" \\\n  -H \"X-API-Key: ${FABRIC_API_KEY}\" \\\n  -d '{\n    \"model\": \"extract_wisdom\",\n    \"stream\": false,\n    \"messages\": [{\"role\": \"user\", \"content\": \"content here\"}]\n  }'\n```\n\n## Workflow Examples\n\n### YouTube \u2192 Obsidian\n1. User: \"Save this AI safety talk: [YouTube URL]\"\n2. YOU \u2192 Content Processor Agent\n3. Content Processor \u2192 Fabric: extract transcript + extract_wisdom\n4. Content Processor \u2192 Knowledge Manager: Store formatted note\n5. Result: `Notes/Videos/[title].md` with insights\n\n### Daily Brief Quality Scoring\n1. Daily Brief: Fetch articles\n2. Daily Brief \u2192 Content Processor: Rate each article\n3. Content Processor \u2192 Fabric: `rate_content` pattern\n4. Content Processor \u2192 Daily Brief: Scores + justifications\n5. Result: Top-scored articles in briefing\n\n### CV Optimization\n1. User: \"Optimize CV summary for AI Engineer role\"\n2. YOU \u2192 Job Search Agent\n3. Job Search \u2192 Content Processor: improve_writing + job context\n4. Content Processor \u2192 Fabric: Execute pattern\n5. Result: Enhanced CV section shown as diff\n\n## Deployment\n\n### Infrastructure\n- **Location**: Raspberry Pi (192.168.5.190)\n- **Docker Image**: `kayvan/fabric:latest` (ARM64 compatible)\n- **Network**: `personal-ai` (dynamic IP, accessible via hostname)\n- **Port**: 8085 (host) \u2192 8080 (container)\n- **Reverse Proxy**: NGINX at `fabric.gavinslater.co.uk`\n- **Resources**: 512MB RAM limit, auto-restart enabled\n\n### Configuration\n- **Default Vendor**: Anthropic\n- **Default Model**: claude-sonnet-4-5-20250929\n- **Pattern Updates**: Auto-sync from official repository\n- **Session Cleanup**: 30-day retention policy\n\n### Health Monitoring\n```bash\n# Check service health\ncurl http://fabric-api:8080/patterns/names\n\n# Container status\ndocker ps --filter \"name=fabric-api\"\n\n# Resource usage\ndocker stats fabric-api\n```\n\n## File Locations\n\n### Service Files\n```\n/services/fabric-service/\n\u251c\u2500\u2500 docker-compose.yml       # Service definition\n\u251c\u2500\u2500 .env                     # API keys (gitignored)\n\u251c\u2500\u2500 README.md                # Setup and usage guide\n\u251c\u2500\u2500 CLAUDE.md                # AI assistant integration guide\n\u251c\u2500\u2500 fabric-proxy/            # FastAPI proxy application\n\u251c\u2500\u2500 config/                  # Fabric configuration (auto-generated)\n\u251c\u2500\u2500 custom-patterns/         # Gavin-specific patterns\n\u2502   \u251c\u2500\u2500 daily-reflection/\n\u2502   \u251c\u2500\u2500 weekly-review/\n\u2502   \u2514\u2500\u2500 risk-agents-content/\n\u251c\u2500\u2500 scripts/                 # Deployment and update scripts\n\u2514\u2500\u2500 logs/                    # Service logs\n```\n\n### Repository\n- **GitHub**: https://github.com/gavraq/fabric-service\n- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`\n- **Prod Environment**: Raspberry Pi `~/docker/fabric`\n\n### Agent & Context Files\n```\n/.claude/agents/content-processor-agent.md    # Agent definition\n/.claude/context/tools/fabric-integration-context.md  # This file\n```\n\n## Integration Guidelines\n\n### Tools-First Protocol\n1. **Content processing tasks** \u2192 Always delegate to Content Processor Agent\n2. **Pattern execution** \u2192 Content Processor handles API calls\n3. **Knowledge storage** \u2192 Delegate to Knowledge Manager (not direct Write)\n4. **Task creation** \u2192 Extract action items \u2192 GTD Task Manager\n\n### Error Handling\n- **API unavailable**: Fall back to direct LLM with similar prompt\n- **Pattern not found**: List available patterns, suggest closest match\n- **Authentication failure**: Check FABRIC_API_KEY, notify user\n- **Timeout**: Retry with exponential backoff (max 3 attempts)\n\n### Quality Standards\n- \u2705 Always format output for Obsidian (frontmatter, markdown, tags)\n- \u2705 Preserve source attribution (URLs, authors, dates)\n- \u2705 Add context via metadata (pattern used, processing date)\n- \u2705 Create logical file paths (by type: Videos/, Articles/, AI Safety/)\n- \u2705 Link to related notes when applicable\n\n## Success Metrics\n\n### Technical\n- API response time: < 2s (95th percentile)\n- Pattern execution success: > 98%\n- Service uptime: > 99.5%\n- Memory usage: < 512MB steady\n\n### Usage\n- Patterns executed per week: Track volume\n- Most used patterns: Optimize workflows\n- Content processed: YouTube, articles, documents\n- Custom pattern adoption: Evidence of value\n\n### Value\n- Time saved: Target 50% reduction\n- Notes created: Volume via Fabric\n- Blog frequency: 2x increase (risk-agents.com)\n- Quality improvement: User feedback\n\n## Quick Reference\n\n### Common Tasks\n\n**Process YouTube Video**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Process YouTube: [URL] using extract_wisdom\"\n```\n\n**Summarize Article**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Summarize article: [URL] for Obsidian storage\"\n```\n\n**Daily Reflection**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Generate daily reflection for today\"\n```\n\n**Rate Article Quality**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Rate this article: [URL]\"\n```\n\n**Optimize Writing**:\n```markdown\nTask \u2192 content-processor-agent \u2192 \"Improve this text: [content]\"\n```\n\n### Pattern Selection Logic\n\n| Content Type | Recommended Pattern | Output |\n|--------------|-------------------|--------|\n| YouTube video | `extract_wisdom` | Insights, quotes, ideas |\n| Web article | `extract_article_wisdom` | Key insights |\n| News article | `rate_content` or `analyze_claims` | Score or fact-check |\n| Writing draft | `improve_writing` | Enhanced version |\n| Long document | `summarize` | Concise summary |\n| Daily data | `daily-reflection` (custom) | GTD-aligned review |\n| Week data | `weekly-review` (custom) | Strategic insights |\n| AI safety content | `risk-agents-content` (custom) | Blog potential |\n\n## Resources\n\n### Documentation\n- Setup Guide: `/services/fabric-service/README.md`\n- AI Assistant Guide: `/services/fabric-service/CLAUDE.md`\n- Agent Definition: `/.claude/agents/content-processor-agent.md`\n\n### External Links\n- Fabric Repository: https://github.com/danielmiessler/fabric\n- Pattern Library: https://github.com/danielmiessler/fabric/tree/main/patterns\n- Docker Images: https://hub.docker.com/r/kayvan/fabric\n\n### Support\n- Check service health: `curl http://fabric-api:8080/patterns/names`\n- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`\n- Pattern list: `curl http://fabric-api:8080/patterns/names | jq`\n\n---\n\n**Key Takeaway**: Fabric adds powerful, standardized content processing to Gavin's Personal AI Infrastructure. Always delegate to Content Processor Agent, leverage community patterns, and maintain tools-first discipline for maximum value.\n",
+      "structuredPatch": [
+        {
+          "oldStart": 338,
+          "oldLines": 7,
+          "newStart": 338,
+          "newLines": 7,
+          "lines": [
+            " ",
+            " ### Support",
+            " - Check service health: `curl http://fabric-api:8080/patterns/names`",
+            "-- View logs: `docker-compose -f /integrations/fabric/docker-compose.yml logs`",
+            "+- View logs: `ssh pi@192.168.5.190 'cd ~/docker/fabric && docker-compose logs'`",
+            " - Pattern list: `curl http://fabric-api:8080/patterns/names | jq`",
+            " ",
+            " ---"
+          ]
+        }
+      ],
+      "userModified": false,
+      "replaceAll": false
+    },
+    "tool_use_id": "toolu_01HeaQxpxZdpLhLXjTqjuXf3"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "completed",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "in_progress",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "completed",
+          "activeForm": "Updating UFC context"
+        },
+        {
+          "content": "Set up git remote on Pi for GitHub deployment",
+          "status": "pending",
+          "activeForm": "Configuring Pi git remote"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "in_progress",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "pending",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "pending",
+          "activeForm": "Updating UFC context"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "completed",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "in_progress",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "completed",
+          "activeForm": "Updating UFC context"
+        },
+        {
+          "content": "Set up git remote on Pi for GitHub deployment",
+          "status": "pending",
+          "activeForm": "Configuring Pi git remote"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01FbmmjrehVzkAkeTHpspU2p"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Read",
+    "tool_input": {
+      "file_path": "/Users/gavinslater/projects/life/services/fabric-service/scripts/update-patterns.sh"
+    },
+    "tool_response": {
+      "type": "text",
+      "file": {
+        "filePath": "/Users/gavinslater/projects/life/services/fabric-service/scripts/update-patterns.sh",
+        "content": "#!/bin/bash\n\n# Fabric Patterns Update Script\n# Updates community patterns from GitHub and reloads the service\n# Usage: ./update-patterns.sh\n\nset -e\n\n# Colors for output\nGREEN='\\033[0;32m'\nYELLOW='\\033[1;33m'\nRED='\\033[0;31m'\nBLUE='\\033[0;34m'\nNC='\\033[0m'\n\n# Configuration\nPI_HOST=\"192.168.5.190\"\nPI_USER=\"pi\"\nPI_PASSWORD=\"raspberry\"\nREMOTE_DIR=\"~/docker/fabric\"\nSCRIPT_DIR=\"$(cd \"$(dirname \"${BASH_SOURCE[0]}\")\" && pwd)\"\nLOCAL_DIR=\"$(dirname \"$SCRIPT_DIR\")\"\n\necho -e \"${BLUE}======================================${NC}\"\necho -e \"${BLUE}Fabric Patterns Update${NC}\"\necho -e \"${BLUE}======================================${NC}\"\necho \"\"\n\n# Check for sshpass\nif ! command -v sshpass &> /dev/null; then\n    echo -e \"${RED}ERROR: sshpass not installed${NC}\"\n    echo \"Install with: brew install hudochenkov/sshpass/sshpass\"\n    exit 1\nfi\n\n# Step 1: Check connectivity\necho -e \"${YELLOW}[1/5] Testing Raspberry Pi connectivity...${NC}\"\nif ! sshpass -p \"$PI_PASSWORD\" ssh -o StrictHostKeyChecking=no -o ConnectTimeout=5 \"$PI_USER@$PI_HOST\" \"echo 'Connected'\" > /dev/null 2>&1; then\n    echo -e \"${RED}ERROR: Cannot connect to Raspberry Pi at $PI_HOST${NC}\"\n    exit 1\nfi\necho -e \"${GREEN}\u2713 Connected to Raspberry Pi${NC}\"\necho \"\"\n\n# Step 2: Get current pattern count\necho -e \"${YELLOW}[2/5] Getting current pattern count...${NC}\"\nBEFORE_COUNT=$(sshpass -p \"$PI_PASSWORD\" ssh \"$PI_USER@$PI_HOST\" \"sudo ls $REMOTE_DIR/config/patterns/ 2>/dev/null | wc -l\")\necho -e \"${GREEN}\u2713 Current patterns: $BEFORE_COUNT${NC}\"\necho \"\"\n\n# Step 3: Clone/update fabric repo and sync patterns\necho -e \"${YELLOW}[3/5] Downloading latest patterns from GitHub...${NC}\"\nsshpass -p \"$PI_PASSWORD\" ssh \"$PI_USER@$PI_HOST\" << 'REMOTE_SCRIPT'\nset -e\n\n# Create temp directory with timestamp\nTEMP_DIR=\"/tmp/fabric_update_$(date +%Y%m%d_%H%M%S)\"\nFABRIC_DIR=~/docker/fabric\n\necho \"Cloning fabric repository...\"\nsudo git clone --depth=1 --quiet https://github.com/danielmiessler/fabric.git \"$TEMP_DIR\"\n\necho \"Syncing patterns...\"\nsudo rsync -a --delete \"$TEMP_DIR/data/patterns/\" \"$FABRIC_DIR/config/patterns/\"\n\necho \"Cleaning up...\"\nsudo rm -rf \"$TEMP_DIR\"\n\necho \"Done\"\nREMOTE_SCRIPT\necho -e \"${GREEN}\u2713 Patterns synced from GitHub${NC}\"\necho \"\"\n\n# Step 4: Restart container\necho -e \"${YELLOW}[4/5] Restarting fabric service...${NC}\"\nsshpass -p \"$PI_PASSWORD\" ssh \"$PI_USER@$PI_HOST\" \"cd $REMOTE_DIR && docker-compose restart fabric-api\" > /dev/null 2>&1\nsleep 5\necho -e \"${GREEN}\u2713 Service restarted${NC}\"\necho \"\"\n\n# Step 5: Verify update\necho -e \"${YELLOW}[5/5] Verifying update...${NC}\"\n\n# Get new pattern count from API\nif [ -f \"$LOCAL_DIR/.env\" ]; then\n    source \"$LOCAL_DIR/.env\"\n    HEALTH=$(curl -s -H \"X-API-Key: ${FABRIC_API_KEY}\" \"https://fabric.gavinslater.co.uk/health\" 2>/dev/null)\n    AFTER_COUNT=$(echo \"$HEALTH\" | grep -o '\"patterns_loaded\":[0-9]*' | grep -o '[0-9]*')\n\n    if [ -n \"$AFTER_COUNT\" ]; then\n        echo -e \"${GREEN}\u2713 Service healthy${NC}\"\n        echo -e \"${GREEN}\u2713 Patterns loaded: $AFTER_COUNT${NC}\"\n    else\n        # Fallback to filesystem count\n        AFTER_COUNT=$(sshpass -p \"$PI_PASSWORD\" ssh \"$PI_USER@$PI_HOST\" \"sudo ls $REMOTE_DIR/config/patterns/ 2>/dev/null | wc -l\")\n        echo -e \"${YELLOW}\u26a0 Could not verify via API, filesystem count: $AFTER_COUNT${NC}\"\n    fi\nelse\n    AFTER_COUNT=$(sshpass -p \"$PI_PASSWORD\" ssh \"$PI_USER@$PI_HOST\" \"sudo ls $REMOTE_DIR/config/patterns/ 2>/dev/null | wc -l\")\n    echo -e \"${YELLOW}\u26a0 No .env file found, filesystem count: $AFTER_COUNT${NC}\"\nfi\necho \"\"\n\n# Summary\necho -e \"${BLUE}======================================${NC}\"\necho -e \"${BLUE}Update Complete${NC}\"\necho -e \"${BLUE}======================================${NC}\"\necho \"\"\necho -e \"Patterns before: ${YELLOW}$BEFORE_COUNT${NC}\"\necho -e \"Patterns after:  ${GREEN}$AFTER_COUNT${NC}\"\n\nif [ \"$BEFORE_COUNT\" != \"$AFTER_COUNT\" ]; then\n    DIFF=$((AFTER_COUNT - BEFORE_COUNT))\n    if [ $DIFF -gt 0 ]; then\n        echo -e \"Change:          ${GREEN}+$DIFF new patterns${NC}\"\n    else\n        echo -e \"Change:          ${YELLOW}$DIFF patterns (some removed upstream)${NC}\"\n    fi\nelse\n    echo -e \"Change:          ${GREEN}No change (already up to date)${NC}\"\nfi\necho \"\"\necho -e \"Service URL: ${BLUE}https://fabric.gavinslater.co.uk${NC}\"\necho \"\"\n",
+        "numLines": 125,
+        "startLine": 1,
+        "totalLines": 125
+      }
+    },
+    "tool_use_id": "toolu_012aqVPt8bAQZPkinvzNCb5T"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ssh pi@192.168.5.190 'cd ~/docker/fabric && git status 2>/dev/null || echo \"Not a git repo\"'",
+      "description": "Check if Pi fabric directory has git initialized"
+    },
+    "tool_response": {
+      "stdout": "Not a git repo",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    },
+    "tool_use_id": "toolu_01Rzrym1CNXT98qzkDzLwpU8"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "Bash",
+    "tool_input": {
+      "command": "ssh pi@192.168.5.190 'cd ~/docker/fabric && git init && git remote add origin https://github.com/gavraq/fabric-service.git && git fetch origin && git checkout -f main'",
+      "description": "Initialize git and set up remote on Pi"
+    },
+    "tool_response": {
+      "stdout": "Initialized empty Git repository in /home/pi/docker/fabric/.git/\nbranch 'main' set up to track 'origin/main'.\nhint: Using 'master' as the name for the initial branch. This default branch name\nhint: is subject to change. To configure the initial branch name to use in all\nhint: of your new repositories, which will suppress this warning, call:\nhint: \nhint: \tgit config --global init.defaultBranch <name>\nhint: \nhint: Names commonly chosen instead of 'master' are 'main', 'trunk' and\nhint: 'development'. The just-created branch can be renamed via this command:\nhint: \nhint: \tgit branch -m <name>\nFrom https://github.com/gavraq/fabric-service\n * [new branch]      main       -> origin/main\nSwitched to a new branch 'main'",
+      "stderr": "",
+      "interrupted": false,
+      "isImage": false
+    },
+    "tool_use_id": "toolu_01HtRX2S4VfS1qqVJdxPz5jD"
+  },
+  {
+    "session_id": "38951428-eeb1-4eb6-a56b-41587f2a127b",
+    "transcript_path": "/Users/gavinslater/.claude/projects/-Users-gavinslater-projects-life/38951428-eeb1-4eb6-a56b-41587f2a127b.jsonl",
+    "cwd": "/Users/gavinslater/projects/life/services/fabric-service",
+    "permission_mode": "bypassPermissions",
+    "hook_event_name": "PostToolUse",
+    "tool_name": "TodoWrite",
+    "tool_input": {
+      "todos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "completed",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "completed",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "completed",
+          "activeForm": "Updating UFC context"
+        },
+        {
+          "content": "Set up git remote on Pi for GitHub deployment",
+          "status": "completed",
+          "activeForm": "Configuring Pi git remote"
+        },
+        {
+          "content": "Commit and push all changes",
+          "status": "in_progress",
+          "activeForm": "Committing changes"
+        }
+      ]
+    },
+    "tool_response": {
+      "oldTodos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "completed",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "in_progress",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "completed",
+          "activeForm": "Updating UFC context"
+        },
+        {
+          "content": "Set up git remote on Pi for GitHub deployment",
+          "status": "pending",
+          "activeForm": "Configuring Pi git remote"
+        }
+      ],
+      "newTodos": [
+        {
+          "content": "Move fabric from integrations/ to services/",
+          "status": "completed",
+          "activeForm": "Moving fabric to services directory"
+        },
+        {
+          "content": "Create GitHub repository for fabric-service",
+          "status": "completed",
+          "activeForm": "Creating GitHub repository"
+        },
+        {
+          "content": "Update README with correct paths and GitHub deployment workflow",
+          "status": "completed",
+          "activeForm": "Updating README documentation"
+        },
+        {
+          "content": "Document fabric prompt update process from Daniel Miessler's repo",
+          "status": "completed",
+          "activeForm": "Documenting prompt update process"
+        },
+        {
+          "content": "Update UFC context files with new fabric location",
+          "status": "completed",
+          "activeForm": "Updating UFC context"
+        },
+        {
+          "content": "Set up git remote on Pi for GitHub deployment",
+          "status": "completed",
+          "activeForm": "Configuring Pi git remote"
+        },
+        {
+          "content": "Commit and push all changes",
+          "status": "in_progress",
+          "activeForm": "Committing changes"
+        }
+      ]
+    },
+    "tool_use_id": "toolu_01HRLi31AzyA7FmfbzgWbjfC"
   }
 ]

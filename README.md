@@ -50,7 +50,7 @@ AI augmentation framework providing 235+ battle-tested patterns for content proc
 
 1. **Clone and Configure**
    ```bash
-   cd /Users/gavinslater/projects/life/integrations/fabric
+   cd /Users/gavinslater/projects/life/services/fabric-service
 
    # Copy environment template
    cp .env.example .env
@@ -96,12 +96,32 @@ AI augmentation framework providing 235+ battle-tested patterns for content proc
    ./scripts/deploy-to-pi.sh
 
    # Or manually:
-   sshpass -p 'raspberry' ssh pi@192.168.5.190 << 'EOF'
+   ssh pi@192.168.5.190 << 'EOF'
      cd ~/docker/fabric
-     git pull
-     docker-compose up -d
+     git pull origin main
+     docker-compose up -d --build
    EOF
    ```
+
+## Repository
+
+- **GitHub**: https://github.com/gavraq/fabric-service
+- **Dev Environment**: `/Users/gavinslater/projects/life/services/fabric-service`
+- **Prod Environment**: Raspberry Pi `~/docker/fabric`
+- **Live URL**: https://fabric.gavinslater.co.uk
+
+### Deployment Workflow
+
+```
+Local dev → GitHub (git push) → Pi (git pull) → Docker build → Running container
+```
+
+Standard deployment steps on Raspberry Pi:
+```bash
+cd ~/docker/fabric
+git pull origin main
+docker-compose up -d --build
+```
 
 ## Usage
 
