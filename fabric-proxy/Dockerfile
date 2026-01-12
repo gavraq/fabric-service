@@ -16,6 +16,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy application code
 COPY main.py pattern_loader.py youtube.py ./
 COPY templates/ ./templates/
+COPY static/ ./static/
 
 # Create patterns directory structure
 RUN mkdir -p /root/.config/fabric/patterns \
