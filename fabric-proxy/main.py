@@ -126,7 +126,7 @@ async def index(request: Request):
             "is_custom": is_custom
         })
 
-    return templates.TemplateResponse("index.html", {
+    return templates.TemplateResponse(request, "index.html", {
         "request": request,
         "patterns": patterns,
         "pattern_count": len(patterns),
@@ -141,7 +141,7 @@ async def view_pattern(request: Request, pattern_name: str):
     if not content:
         raise HTTPException(status_code=404, detail=f"Pattern '{pattern_name}' not found")
 
-    return templates.TemplateResponse("pattern.html", {
+    return templates.TemplateResponse(request, "pattern.html", {
         "request": request,
         "pattern_name": pattern_name,
         "content": content,
